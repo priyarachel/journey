@@ -7,855 +7,4029 @@ Source: https://sketchfab.com/3d-models/slum-house-e902e0af80804d01924387da6af8e
 Title: Slum house
 */
 
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import { forwardRef } from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Slum(props) {
-  const { nodes, materials } = useGLTF('./models/slum_house.glb')
+export const Slum = forwardRef(function (props, ref) {
+  const { nodes, materials } = useGLTF("./models/slum_house.glb");
   return (
-    <group {...props} dispose={null}>
+    <group {...props} ref={ref} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.065}>
         <group rotation={[Math.PI / 2, 0, 0]}>
-          <group position={[-7.867, 20.292, 4.376]} rotation={[-Math.PI / 2, 0, 0]}>
-            <mesh geometry={nodes['Cylinder054_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[8.647, -30.511, 21.142]} />
-            <mesh geometry={nodes['Ground_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-0.041, 9.301, -21.838]} />
-            <mesh geometry={nodes['Plane290_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.308, -0.807, -19.76]} />
-            <mesh geometry={nodes['chair_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-42.934, -35.393, -12.284]} />
-            <mesh geometry={nodes['Cylinder065_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-33.827, -24.323, -2.623]} />
-            <mesh geometry={nodes['Object077_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.867, 4.376, -20.311]} />
-            <mesh geometry={nodes['Line028_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.867, 4.376, -20.311]} />
-            <mesh geometry={nodes['Cylinder027_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.867, 4.376, -20.311]} />
-            <mesh geometry={nodes['Box862_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[47.2, 14.946, -17.268]} />
-            <mesh geometry={nodes['Object105_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.185, -29.821, -19.96]} />
-            <mesh geometry={nodes['Plane006_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.78, -43.029, -19.81]} />
-            <mesh geometry={nodes['Box009_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[48.242, -19.222, -19.999]} />
-            <mesh geometry={nodes['Box011_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[47.761, -8.716, -19.999]} />
-            <mesh geometry={nodes['table_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-36.538, -20.256, -7.89]} />
-            <mesh geometry={nodes['Cylinder063_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-33.827, -24.323, -6.849]} />
-            <mesh geometry={nodes['Box863_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.867, 4.376, -20.311]} />
-            <mesh geometry={nodes['Object1340222_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-13.835, -30.934, -0.455]} />
-            <mesh geometry={nodes['Object002_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-16.436, -31.812, -0.455]} />
-            <mesh geometry={nodes['Object1340221_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.867, 4.376, -20.292]} />
-            <mesh geometry={nodes['Object1340223_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-14.783, -32.156, -0.455]} />
-            <mesh geometry={nodes['Plane007_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.38, -43.646, -19.76]} />
-            <mesh geometry={nodes['Plane008_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.834, -43.853, -19.973]} />
-            <mesh geometry={nodes['Plane009_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.546, -44.589, -19.81]} />
-            <mesh geometry={nodes['Plane010_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.104, -44.863, -19.76]} />
-            <mesh geometry={nodes['Plane011_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.555, -45.168, -19.973]} />
-            <mesh geometry={nodes['Plane012_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.654, -44.912, -19.973]} />
-            <mesh geometry={nodes['Plane013_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.992, -44.467, -19.81]} />
-            <mesh geometry={nodes['Plane014_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.217, -47.585, -19.81]} />
-            <mesh geometry={nodes['Plane015_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.475, -46.886, -19.729]} />
-            <mesh geometry={nodes['Plane016_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.881, -45.879, -19.878]} />
-            <mesh geometry={nodes['Plane017_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.379, -45.729, -19.76]} />
-            <mesh geometry={nodes['Plane018_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.384, -46.141, -19.81]} />
-            <mesh geometry={nodes['Plane019_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.974, -46.449, -19.76]} />
-            <mesh geometry={nodes['Plane020_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[41.376, -46.218, -19.81]} />
-            <mesh geometry={nodes['Plane021_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[42.103, -46.121, -19.76]} />
-            <mesh geometry={nodes['Plane022_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[43.113, -46.183, -19.81]} />
-            <mesh geometry={nodes['Plane023_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[42.713, -46.374, -19.973]} />
-            <mesh geometry={nodes['Plane024_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.435, -47.778, -19.778]} />
-            <mesh geometry={nodes['Plane025_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.792, -47.131, -19.81]} />
-            <mesh geometry={nodes['Plane026_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.865, -42.466, -19.973]} />
-            <mesh geometry={nodes['Plane027_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.385, -48.286, -19.76]} />
-            <mesh geometry={nodes['Plane028_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.957, -48.14, -19.973]} />
-            <mesh geometry={nodes['Plane029_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.754, -49.113, -19.81]} />
-            <mesh geometry={nodes['Plane030_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[41.953, -46.625, -19.76]} />
-            <mesh geometry={nodes['Plane031_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[41.072, -47.426, -19.81]} />
-            <mesh geometry={nodes['Plane032_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.83, -41.947, -19.76]} />
-            <mesh geometry={nodes['Plane033_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.233, -42.29, -19.81]} />
-            <mesh geometry={nodes['Plane034_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.837, -40.891, -19.81]} />
-            <mesh geometry={nodes['Plane035_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.939, -42.984, -19.76]} />
-            <mesh geometry={nodes['Plane036_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.641, -40.234, -19.76]} />
-            <mesh geometry={nodes['Plane037_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.537, -46.414, -19.76]} />
-            <mesh geometry={nodes['Plane038_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.869, -45.529, -19.76]} />
-            <mesh geometry={nodes['Plane039_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-14.392, -30.503, -19.81]} />
-            <mesh geometry={nodes['Plane040_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-7.076, -30.397, -19.76]} />
-            <mesh geometry={nodes['Plane041_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-15.214, -30.587, -19.973]} />
-            <mesh geometry={nodes['Plane042_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-8.012, -30.598, -19.81]} />
-            <mesh geometry={nodes['Plane043_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-16.213, -30.894, -19.76]} />
-            <mesh geometry={nodes['Plane044_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-16.539, -30.357, -19.973]} />
-            <mesh geometry={nodes['Plane045_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-16.279, -30.446, -19.973]} />
-            <mesh geometry={nodes['Plane046_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-15.822, -30.768, -19.81]} />
-            <mesh geometry={nodes['Plane047_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-19.27, -30.306, -19.81]} />
-            <mesh geometry={nodes['Plane048_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-12.133, -30.501, -19.729]} />
-            <mesh geometry={nodes['Plane049_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-17.217, -30.471, -19.878]} />
-            <mesh geometry={nodes['Plane050_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-9.157, -30.473, -19.76]} />
-            <mesh geometry={nodes['Plane051_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-11.392, -30.384, -19.81]} />
-            <mesh geometry={nodes['Plane052_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-21.537, -30.443, -19.76]} />
-            <mesh geometry={nodes['Plane053_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-10.046, -30.476, -19.81]} />
-            <mesh geometry={nodes['Plane054_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-23.375, -30.532, -19.76]} />
-            <mesh geometry={nodes['Plane055_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-23.612, -30.737, -19.81]} />
-            <mesh geometry={nodes['Plane056_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-22.648, -30.541, -19.973]} />
-            <mesh geometry={nodes['Plane057_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-19.151, -30.332, -19.778]} />
-            <mesh geometry={nodes['Plane058_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-20.585, -30.461, -19.81]} />
-            <mesh geometry={nodes['Plane059_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-13.827, -30.567, -19.973]} />
-            <mesh geometry={nodes['Plane060_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-19.964, -30.499, -19.76]} />
-            <mesh geometry={nodes['Plane061_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-19.494, -30.867, -19.973]} />
-            <mesh geometry={nodes['Plane062_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-20.473, -30.7, -19.81]} />
-            <mesh geometry={nodes['Plane063_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-21.847, -30.555, -19.76]} />
-            <mesh geometry={nodes['Plane064_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-20.752, -30.089, -19.81]} />
-            <mesh geometry={nodes['Plane065_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-13.309, -30.514, -19.76]} />
-            <mesh geometry={nodes['Plane066_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-14.766, -30.452, -19.81]} />
-            <mesh geometry={nodes['Plane067_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-12.254, -30.482, -19.81]} />
-            <mesh geometry={nodes['Plane068_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-14.341, -30.661, -19.76]} />
-            <mesh geometry={nodes['Plane069_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-17.784, -30.384, -19.76]} />
-            <mesh geometry={nodes['Plane070_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-10.753, -30.409, -19.76]} />
-            <mesh geometry={nodes['Plane071_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-8.555, -30.397, -19.76]} />
-            <mesh geometry={nodes['Plane072_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-9.614, -30.409, -19.76]} />
-            <mesh geometry={nodes['Plane073_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-12.779, -30.768, -19.81]} />
-            <mesh geometry={nodes['Plane074_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-11.223, -30.514, -19.76]} />
-            <mesh geometry={nodes['Plane075_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-21.086, -30.384, -19.76]} />
-            <mesh geometry={nodes['Plane076_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-17.5, -30.587, -19.973]} />
-            <mesh geometry={nodes['Plane077_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-18.499, -30.514, -19.76]} />
-            <mesh geometry={nodes['Plane078_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-18.17, -30.768, -19.81]} />
-            <mesh geometry={nodes['Plane079_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-23.708, -35.53, -19.973]} />
-            <mesh geometry={nodes['Plane080_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-23.385, -32.818, -19.81]} />
-            <mesh geometry={nodes['Plane081_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-23.754, -34.844, -19.878]} />
-            <mesh geometry={nodes['Plane082_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-23.423, -32.933, -19.778]} />
-            <mesh geometry={nodes['Plane083_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-23.408, -31.493, -19.81]} />
-            <mesh geometry={nodes['Plane084_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-23.508, -32.107, -19.76]} />
-            <mesh geometry={nodes['Plane085_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-23.657, -32.539, -19.973]} />
-            <mesh geometry={nodes['Plane086_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-23.657, -31.581, -19.81]} />
-            <mesh geometry={nodes['Plane087_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-23.611, -34.288, -19.76]} />
-            <mesh geometry={nodes['Plane088_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-23.669, -33.564, -19.76]} />
-            <mesh geometry={nodes['Plane089_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-23.954, -33.866, -19.81]} />
-            <mesh geometry={nodes['Plane090_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-24.279, -30.632, -19.677]} />
-            <mesh geometry={nodes['Plane091_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-26.667, -30.665, -19.695]} />
-            <mesh geometry={nodes['Plane092_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-25.849, -30.524, -19.677]} />
-            <mesh geometry={nodes['Plane093_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-25.333, -30.341, -19.824]} />
-            <mesh geometry={nodes['Plane094_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-24.731, -30.677, -19.677]} />
-            <mesh geometry={nodes['Plane095_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.641, -37.379, -19.729]} />
-            <mesh geometry={nodes['Plane096_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.545, -36.222, -19.76]} />
-            <mesh geometry={nodes['Plane097_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.435, -39.396, -19.778]} />
-            <mesh geometry={nodes['Plane098_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.552, -38.779, -19.76]} />
-            <mesh geometry={nodes['Plane099_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.537, -38.032, -19.76]} />
-            <mesh geometry={nodes['Plane100_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.833, -49.056, -19.81]} />
-            <mesh geometry={nodes['Plane101_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.831, -48.23, -19.973]} />
-            <mesh geometry={nodes['Plane102_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.167, -47.45, -19.81]} />
-            <mesh geometry={nodes['Plane103_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.625, -47.205, -19.76]} />
-            <mesh geometry={nodes['Plane104_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[8.192, -46.934, -19.973]} />
-            <mesh geometry={nodes['Plane105_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.712, -47.607, -19.81]} />
-            <mesh geometry={nodes['Plane106_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.406, -46.323, -19.76]} />
-            <mesh geometry={nodes['Plane107_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[5.71, -45.824, -19.76]} />
-            <mesh geometry={nodes['Plane108_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.713, -49.612, -19.973]} />
-            <mesh geometry={nodes['Plane109_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.715, -50.132, -19.76]} />
-            <mesh geometry={nodes['Plane110_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.335, -49.765, -19.81]} />
-            <mesh geometry={nodes['Plane111_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.642, -51.185, -19.81]} />
-            <mesh geometry={nodes['Plane112_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.672, -49.09, -19.76]} />
-            <mesh geometry={nodes['Plane113_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.797, -51.853, -19.76]} />
-            <mesh geometry={nodes['Plane114_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[6.903, -46.492, -19.76]} />
-            <mesh geometry={nodes['Plane115_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.64, -55.864, -19.76]} />
-            <mesh geometry={nodes['Plane116_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.95, -52.703, -19.778]} />
-            <mesh geometry={nodes['Plane117_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.794, -53.312, -19.76]} />
-            <mesh geometry={nodes['Plane118_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.618, -54.057, -19.76]} />
-            <mesh geometry={nodes['Plane119_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.707, -43.292, -19.973]} />
-            <mesh geometry={nodes['Plane120_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.968, -44.282, -19.81]} />
-            <mesh geometry={nodes['Plane121_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.448, -44.305, -19.76]} />
-            <mesh geometry={nodes['Plane122_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.544, -43.905, -19.81]} />
-            <mesh geometry={nodes['Plane123_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.265, -45.195, -19.76]} />
-            <mesh geometry={nodes['Plane124_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.79, -45.26, -19.76]} />
-            <mesh geometry={nodes['Plane125_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.144, -45.87, -19.81]} />
-            <mesh geometry={nodes['Plane126_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[6.77, -45.51, -19.76]} />
-            <mesh geometry={nodes['Plane127_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[6.338, -45.053, -19.973]} />
-            <mesh geometry={nodes['Plane128_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[6.611, -45.086, -19.973]} />
-            <mesh geometry={nodes['Plane129_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[4.16, -46.291, -19.81]} />
-            <mesh geometry={nodes['Plane130_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[4.901, -46.368, -19.729]} />
-            <mesh geometry={nodes['Plane131_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[5.73, -45.545, -19.878]} />
-            <mesh geometry={nodes['Plane132_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[5.998, -45.99, -19.76]} />
-            <mesh geometry={nodes['Plane133_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[5.601, -46.097, -19.81]} />
-            <mesh geometry={nodes['Plane134_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[5.448, -46.744, -19.76]} />
-            <mesh geometry={nodes['Plane135_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[5.771, -47.076, -19.81]} />
-            <mesh geometry={nodes['Plane136_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.543, -42.119, -19.76]} />
-            <mesh geometry={nodes['Plane137_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.732, -43.114, -19.81]} />
-            <mesh geometry={nodes['Plane138_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.448, -42.774, -19.973]} />
-            <mesh geometry={nodes['Plane139_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[3.779, -45.58, -19.778]} />
-            <mesh geometry={nodes['Plane140_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[4.742, -46.736, -19.81]} />
-            <mesh geometry={nodes['Plane141_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[3.522, -46.627, -19.76]} />
-            <mesh geometry={nodes['Plane142_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[3.558, -46.175, -19.973]} />
-            <mesh geometry={nodes['Plane143_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[2.565, -46.219, -19.81]} />
-            <mesh geometry={nodes['Plane144_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.711, -40.938, -19.76]} />
-            <mesh geometry={nodes['Plane145_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[4.525, -47.08, -19.81]} />
-            <mesh geometry={nodes['Plane146_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[5.127, -45.343, -19.76]} />
-            <mesh geometry={nodes['Plane147_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[6.313, -46.416, -19.76]} />
-            <mesh geometry={nodes['Plane148_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[7.715, -55.029, -19.76]} />
-            <mesh geometry={nodes['Plane149_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.193, -43.247, -19.81]} />
-            <mesh geometry={nodes['Plane150_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.201, -44.073, -19.973]} />
-            <mesh geometry={nodes['Plane151_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.309, -42.69, -19.973]} />
-            <mesh geometry={nodes['Plane152_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.303, -42.17, -19.76]} />
-            <mesh geometry={nodes['Plane153_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.686, -42.534, -19.81]} />
-            <mesh geometry={nodes['Plane154_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.369, -41.116, -19.81]} />
-            <mesh geometry={nodes['Plane155_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.354, -43.211, -19.76]} />
-            <mesh geometry={nodes['Plane156_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.209, -40.449, -19.76]} />
-            <mesh geometry={nodes['Plane157_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.338, -36.438, -19.76]} />
-            <mesh geometry={nodes['Plane158_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.05, -39.601, -19.778]} />
-            <mesh geometry={nodes['Plane159_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.202, -38.991, -19.76]} />
-            <mesh geometry={nodes['Plane160_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.228, -38.245, -19.76]} />
-            <mesh geometry={nodes['Plane161_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.268, -37.273, -19.76]} />
-            <mesh geometry={nodes['Plane162_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.206, -45.408, -19.81]} />
-            <mesh geometry={nodes['Plane163_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.141, -44.585, -19.973]} />
-            <mesh geometry={nodes['Plane164_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.129, -45.972, -19.973]} />
-            <mesh geometry={nodes['Plane165_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.17, -46.491, -19.76]} />
-            <mesh geometry={nodes['Plane166_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[16.763, -46.153, -19.81]} />
-            <mesh geometry={nodes['Plane167_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.177, -47.547, -19.81]} />
-            <mesh geometry={nodes['Plane168_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.048, -45.455, -19.76]} />
-            <mesh geometry={nodes['Plane169_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.382, -48.201, -19.76]} />
-            <mesh geometry={nodes['Plane170_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.529, -52.211, -19.76]} />
-            <mesh geometry={nodes['Plane171_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.599, -49.036, -19.778]} />
-            <mesh geometry={nodes['Plane172_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.489, -49.655, -19.76]} />
-            <mesh geometry={nodes['Plane173_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.514, -50.401, -19.76]} />
-            <mesh geometry={nodes['Plane174_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.541, -51.374, -19.76]} />
-            <mesh geometry={nodes['Plane175_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.371, -53.899, -19.81]} />
-            <mesh geometry={nodes['Plane176_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.184, -52.592, -19.76]} />
-            <mesh geometry={nodes['Plane177_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.195, -55.372, -19.76]} />
-            <mesh geometry={nodes['Plane178_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-1.072, -30.461, -19.76]} />
-            <mesh geometry={nodes['Plane179_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-4.129, -30.306, -19.81]} />
-            <mesh geometry={nodes['Plane180_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-3.358, -30.514, -19.76]} />
-            <mesh geometry={nodes['Plane181_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-3.029, -30.413, -19.81]} />
-            <mesh geometry={nodes['Object1340224_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-7.735, -30.745, -0.455]} />
-            <mesh geometry={nodes['Object1340225_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-8.665, -31.86, -0.455]} />
-            <mesh geometry={nodes['Object1340226_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-9.84, -30.769, -0.455]} />
-            <mesh geometry={nodes['Object1340227_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-11.318, -32.054, -0.455]} />
-            <mesh geometry={nodes['Object1340228_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-12.644, -31.329, -0.455]} />
-            <mesh geometry={nodes['Object1340229_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-6.711, -31.329, -0.455]} />
-            <mesh geometry={nodes['Object1340230_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-10.907, -30.745, -0.455]} />
-            <mesh geometry={nodes['Box865_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-17.438, 49.047, -17.268]} />
-            <mesh geometry={nodes['Plane182_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-48.77, -30.306, -19.81]} />
-            <mesh geometry={nodes['Plane183_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-51.036, -30.443, -19.76]} />
-            <mesh geometry={nodes['Plane184_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-52.875, -30.532, -19.76]} />
-            <mesh geometry={nodes['Plane185_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-53.112, -30.737, -19.81]} />
-            <mesh geometry={nodes['Plane186_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-52.148, -30.541, -19.973]} />
-            <mesh geometry={nodes['Plane187_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-48.651, -30.332, -19.778]} />
-            <mesh geometry={nodes['Plane188_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-50.085, -30.461, -19.81]} />
-            <mesh geometry={nodes['Plane189_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-49.464, -30.499, -19.76]} />
-            <mesh geometry={nodes['Plane190_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-48.994, -30.867, -19.973]} />
-            <mesh geometry={nodes['Plane191_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-49.973, -30.7, -19.81]} />
-            <mesh geometry={nodes['Plane192_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-51.347, -30.555, -19.76]} />
-            <mesh geometry={nodes['Plane193_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-50.252, -30.089, -19.81]} />
-            <mesh geometry={nodes['Plane194_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-50.586, -30.384, -19.76]} />
-            <mesh geometry={nodes['Plane195_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-53.779, -30.632, -19.677]} />
-            <mesh geometry={nodes['Plane196_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-56.167, -30.665, -19.695]} />
-            <mesh geometry={nodes['Plane197_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-55.349, -30.524, -19.677]} />
-            <mesh geometry={nodes['Plane198_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-54.833, -30.341, -19.851]} />
-            <mesh geometry={nodes['Plane199_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-54.231, -30.677, -19.677]} />
-            <mesh geometry={nodes['Plane200_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-64.008, -30.713, -19.81]} />
-            <mesh geometry={nodes['Plane201_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-61.739, -30.626, -19.76]} />
-            <mesh geometry={nodes['Plane202_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-59.898, -30.579, -19.76]} />
-            <mesh geometry={nodes['Plane203_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-59.657, -30.38, -19.81]} />
-            <mesh geometry={nodes['Plane204_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-60.625, -30.553, -19.973]} />
-            <mesh geometry={nodes['Plane205_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-64.126, -30.684, -19.778]} />
-            <mesh geometry={nodes['Plane206_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-62.69, -30.587, -19.81]} />
-            <mesh geometry={nodes['Plane207_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-63.309, -30.535, -19.76]} />
-            <mesh geometry={nodes['Plane208_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-63.771, -30.157, -19.973]} />
-            <mesh geometry={nodes['Plane209_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-62.796, -30.346, -19.81]} />
-            <mesh geometry={nodes['Plane210_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-61.425, -30.521, -19.76]} />
-            <mesh geometry={nodes['Plane211_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-62.531, -30.962, -19.81]} />
-            <mesh geometry={nodes['Plane212_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-62.19, -30.675, -19.76]} />
-            <mesh geometry={nodes['Plane213_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-58.993, -30.499, -19.677]} />
-            <mesh geometry={nodes['Plane214_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-56.605, -30.521, -19.695]} />
-            <mesh geometry={nodes['Plane215_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-57.426, -30.643, -19.677]} />
-            <mesh geometry={nodes['Plane216_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-57.945, -30.814, -19.851]} />
-            <mesh geometry={nodes['Plane217_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-58.54, -30.465, -19.677]} />
-            <mesh geometry={nodes['Plane218_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.427, -33.455, -19.677]} />
-            <mesh geometry={nodes['Plane219_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.431, -31.067, -19.695]} />
-            <mesh geometry={nodes['Plane220_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.3, -31.886, -19.677]} />
-            <mesh geometry={nodes['Plane221_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.123, -32.404, -19.828]} />
-            <mesh geometry={nodes['Plane222_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.466, -33.002, -19.677]} />
-            <mesh geometry={nodes['Plane223_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.104, -27.58, -19.81]} />
-            <mesh geometry={nodes['Plane224_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.232, -28.243, -19.677]} />
-            <mesh geometry={nodes['Plane225_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.282, -30.63, -19.695]} />
-            <mesh geometry={nodes['Plane226_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.394, -29.808, -19.677]} />
-            <mesh geometry={nodes['Plane227_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.559, -29.286, -19.82]} />
-            <mesh geometry={nodes['Plane228_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.203, -28.696, -19.677]} />
-            <mesh geometry={nodes['Plane229_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-70.174, -30.713, -19.81]} />
-            <mesh geometry={nodes['Plane230_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-67.904, -30.626, -19.76]} />
-            <mesh geometry={nodes['Plane231_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-70.291, -30.684, -19.778]} />
-            <mesh geometry={nodes['Plane232_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-68.855, -30.587, -19.81]} />
-            <mesh geometry={nodes['Plane233_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-69.475, -30.535, -19.76]} />
-            <mesh geometry={nodes['Plane234_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-69.937, -30.157, -19.973]} />
-            <mesh geometry={nodes['Plane235_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-68.961, -30.346, -19.81]} />
-            <mesh geometry={nodes['Plane236_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-67.591, -30.521, -19.76]} />
-            <mesh geometry={nodes['Plane237_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-68.697, -30.962, -19.81]} />
-            <mesh geometry={nodes['Plane238_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-68.356, -30.675, -19.76]} />
-            <mesh geometry={nodes['Plane239_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.362, -23.095, -19.81]} />
-            <mesh geometry={nodes['Plane240_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.389, -23.769, -19.677]} />
-            <mesh geometry={nodes['Plane241_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.315, -25.341, -19.677]} />
-            <mesh geometry={nodes['Plane242_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.557, -24.85, -19.828]} />
-            <mesh geometry={nodes['Plane243_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-71.293, -24.213, -19.677]} />
-            <mesh geometry={nodes['Plane244_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.753, 5.654, -19.81]} />
-            <mesh geometry={nodes['Plane245_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.153, 5.036, -19.76]} />
-            <mesh geometry={nodes['Plane246_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.698, 4.829, -19.973]} />
-            <mesh geometry={nodes['Plane247_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-43.987, 4.093, -19.81]} />
-            <mesh geometry={nodes['Plane248_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.429, 3.819, -19.76]} />
-            <mesh geometry={nodes['Plane249_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.978, 3.514, -19.973]} />
-            <mesh geometry={nodes['Plane250_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.879, 3.77, -19.973]} />
-            <mesh geometry={nodes['Plane251_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.54, 4.215, -19.81]} />
-            <mesh geometry={nodes['Plane252_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.316, 1.097, -19.81]} />
-            <mesh geometry={nodes['Plane253_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.058, 1.796, -19.729]} />
-            <mesh geometry={nodes['Plane254_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.651, 2.803, -19.878]} />
-            <mesh geometry={nodes['Plane255_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.154, 2.953, -19.76]} />
-            <mesh geometry={nodes['Plane256_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.148, 2.542, -19.81]} />
-            <mesh geometry={nodes['Plane257_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-43.558, 2.233, -19.76]} />
-            <mesh geometry={nodes['Plane258_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-43.157, 2.464, -19.81]} />
-            <mesh geometry={nodes['Plane259_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-42.43, 2.562, -19.76]} />
-            <mesh geometry={nodes['Plane260_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.419, 2.499, -19.81]} />
-            <mesh geometry={nodes['Plane261_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.819, 2.308, -19.973]} />
-            <mesh geometry={nodes['Plane262_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-45.098, 0.904, -19.778]} />
-            <mesh geometry={nodes['Plane263_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-43.74, 1.551, -19.81]} />
-            <mesh geometry={nodes['Plane264_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.668, 6.216, -19.973]} />
-            <mesh geometry={nodes['Plane265_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.147, 0.396, -19.76]} />
-            <mesh geometry={nodes['Plane266_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.576, 0.542, -19.973]} />
-            <mesh geometry={nodes['Plane267_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.779, -0.431, -19.81]} />
-            <mesh geometry={nodes['Plane268_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-42.58, 2.057, -19.76]} />
-            <mesh geometry={nodes['Plane269_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-43.46, 1.256, -19.81]} />
-            <mesh geometry={nodes['Plane270_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.702, 6.735, -19.76]} />
-            <mesh geometry={nodes['Plane271_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.3, 6.393, -19.81]} />
-            <mesh geometry={nodes['Plane272_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.695, 7.791, -19.81]} />
-            <mesh geometry={nodes['Plane273_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.593, 5.698, -19.76]} />
-            <mesh geometry={nodes['Plane274_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.892, 8.448, -19.76]} />
-            <mesh geometry={nodes['Plane275_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.996, 2.268, -19.76]} />
-            <mesh geometry={nodes['Plane276_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-43.663, 3.153, -19.76]} />
-            <mesh geometry={nodes['Plane277_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-36.693, 0.694, -19.76]} />
-            <mesh geometry={nodes['Plane278_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-36.851, 1.255, -19.973]} />
-            <mesh geometry={nodes['Plane279_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-37.646, 0.61, -19.81]} />
-            <mesh geometry={nodes['Plane280_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-37.881, 1.074, -19.76]} />
-            <mesh geometry={nodes['Plane281_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-38.137, 1.647, -19.973]} />
-            <mesh geometry={nodes['Plane282_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-37.89, 1.527, -19.973]} />
-            <mesh geometry={nodes['Plane283_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-37.477, 1.151, -19.81]} />
-            <mesh geometry={nodes['Plane284_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.928, 0.881, -19.729]} />
-            <mesh geometry={nodes['Plane285_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-38.874, 1.385, -19.878]} />
-            <mesh geometry={nodes['Plane286_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-38.768, 0.876, -19.76]} />
-            <mesh geometry={nodes['Plane287_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.178, 0.906, -19.81]} />
-            <mesh geometry={nodes['Plane288_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.536, 0.345, -19.76]} />
-            <mesh geometry={nodes['Plane289_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.341, -0.075, -19.81]} />
-            <mesh geometry={nodes['Plane291_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.458, -1.809, -19.81]} />
-            <mesh geometry={nodes['Plane292_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.614, -1.394, -19.973]} />
-            <mesh geometry={nodes['Plane293_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-40.2, 0.586, -19.81]} />
-            <mesh geometry={nodes['Plane294_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.798, -0.614, -19.76]} />
-            <mesh geometry={nodes['Plane295_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-35.994, 1.074, -19.76]} />
-            <mesh geometry={nodes['Plane296_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.377, 1.774, -19.76]} />
-            <mesh geometry={nodes['Plane297_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-38.611, 0.37, -19.76]} />
-            <mesh geometry={nodes['Plane298_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-40.313, 1.964, -19.81]} />
-            <mesh geometry={nodes['Plane299_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-40.819, 2.083, -19.76]} />
-            <mesh geometry={nodes['Plane300_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.424, 2.254, -19.973]} />
-            <mesh geometry={nodes['Plane301_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.172, 2.366, -19.973]} />
-            <mesh geometry={nodes['Plane302_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.988, 0.39, -19.729]} />
-            <mesh geometry={nodes['Plane303_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.696, 1.521, -19.878]} />
-            <mesh geometry={nodes['Plane304_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.238, 1.276, -19.76]} />
-            <mesh geometry={nodes['Plane305_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.525, 0.981, -19.81]} />
-            <mesh geometry={nodes['Plane306_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.326, 0.346, -19.76]} />
-            <mesh geometry={nodes['Plane307_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-40.878, 0.225, -19.81]} />
-            <mesh geometry={nodes['Plane308_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.937, -0.008, -19.81]} />
-            <mesh geometry={nodes['Plane309_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-42.318, 1.386, -19.76]} />
-            <mesh geometry={nodes['Plane310_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-40.749, 1.07, -19.76]} />
-            <mesh geometry={nodes['Plane311_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-47.897, -0.194, -19.81]} />
-            <mesh geometry={nodes['Plane312_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-47.913, 0.325, -19.76]} />
-            <mesh geometry={nodes['Plane313_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-47.903, 0.954, -19.973]} />
-            <mesh geometry={nodes['Plane314_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-47.73, 0.74, -19.973]} />
-            <mesh geometry={nodes['Plane315_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-49.85, 1.016, -19.729]} />
-            <mesh geometry={nodes['Plane316_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-48.682, 1.027, -19.878]} />
-            <mesh geometry={nodes['Plane317_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-48.801, 0.521, -19.76]} />
-            <mesh geometry={nodes['Plane318_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-49.16, 0.721, -19.81]} />
-            <mesh geometry={nodes['Plane319_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-49.722, 0.365, -19.76]} />
-            <mesh geometry={nodes['Plane320_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-49.722, -0.099, -19.81]} />
-            <mesh geometry={nodes['Plane321_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-50.221, 0.863, -19.81]} />
-            <mesh geometry={nodes['Plane322_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-48.973, 1.592, -19.76]} />
-            <mesh geometry={nodes['Plane323_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-48.873, -0.004, -19.76]} />
-            <mesh geometry={nodes['Plane324_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-45.492, 2.094, -19.81]} />
-            <mesh geometry={nodes['Plane325_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-46.008, 2.032, -19.76]} />
-            <mesh geometry={nodes['Plane326_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-46.635, 1.987, -19.973]} />
-            <mesh geometry={nodes['Plane327_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-46.437, 2.178, -19.973]} />
-            <mesh geometry={nodes['Plane328_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-46.527, 0.042, -19.729]} />
-            <mesh geometry={nodes['Plane329_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-46.64, 1.205, -19.878]} />
-            <mesh geometry={nodes['Plane330_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-46.125, 1.131, -19.76]} />
-            <mesh geometry={nodes['Plane331_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-46.294, 0.756, -19.81]} />
-            <mesh geometry={nodes['Plane332_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-45.89, 0.227, -19.76]} />
-            <mesh geometry={nodes['Plane333_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-45.428, 0.267, -19.81]} />
-            <mesh geometry={nodes['Plane334_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-46.343, -0.314, -19.81]} />
-            <mesh geometry={nodes['Plane335_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-47.178, 0.866, -19.76]} />
-            <mesh geometry={nodes['Plane336_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-45.596, 1.105, -19.76]} />
-            <mesh geometry={nodes['Plane337_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-43.484, 2.115, -19.81]} />
-            <mesh geometry={nodes['Plane338_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.218, 1.988, -19.729]} />
-            <mesh geometry={nodes['Plane339_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.793, 0.971, -19.878]} />
-            <mesh geometry={nodes['Plane340_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-45.172, 1.327, -19.76]} />
-            <mesh geometry={nodes['Plane341_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.819, 1.538, -19.81]} />
-            <mesh geometry={nodes['Plane342_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.847, 2.203, -19.76]} />
-            <mesh geometry={nodes['Plane343_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-42.925, 1.534, -19.778]} />
-            <mesh geometry={nodes['Plane344_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.165, 2.386, -19.81]} />
-            <mesh geometry={nodes['Plane345_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-42.961, 2.611, -19.76]} />
-            <mesh geometry={nodes['Plane346_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-42.873, 2.167, -19.973]} />
-            <mesh geometry={nodes['Plane347_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.929, 2.478, -19.81]} />
-            <mesh geometry={nodes['Plane348_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.049, 2.776, -19.81]} />
-            <mesh geometry={nodes['Plane349_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.158, 0.941, -19.76]} />
-            <mesh geometry={nodes['Plane350_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-43.759, 0.598, -19.81]} />
-            <mesh geometry={nodes['Plane351_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-43.448, 0.182, -19.76]} />
-            <mesh geometry={nodes['Plane352_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-43.095, -0.339, -19.973]} />
-            <mesh geometry={nodes['Plane353_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-43.359, -0.262, -19.973]} />
-            <mesh geometry={nodes['Plane354_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.465, 0.727, -19.729]} />
-            <mesh geometry={nodes['Plane355_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-42.415, 0.048, -19.878]} />
-            <mesh geometry={nodes['Plane356_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-42.608, 0.531, -19.76]} />
-            <mesh geometry={nodes['Plane357_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-42.199, 0.572, -19.81]} />
-            <mesh geometry={nodes['Plane358_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.943, 1.187, -19.76]} />
-            <mesh geometry={nodes['Plane359_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-42.209, 1.567, -19.81]} />
-            <mesh geometry={nodes['Plane360_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.248, 1.065, -19.81]} />
-            <mesh geometry={nodes['Plane361_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.852, -0.248, -19.76]} />
-            <mesh geometry={nodes['Plane362_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-42.85, 1.002, -19.76]} />
-            <mesh geometry={nodes['Plane363_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.686, -8.699, -19.695]} />
-            <mesh geometry={nodes['Plane364_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.649, -7.441, -19.677]} />
-            <mesh geometry={nodes['Plane365_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.815, -6.919, -19.727]} />
-            <mesh geometry={nodes['Plane366_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.458, -6.329, -19.677]} />
-            <mesh geometry={nodes['Plane367_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.257, 22.293, -19.973]} />
-            <mesh geometry={nodes['Plane368_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.263, 23.629, -19.81]} />
-            <mesh geometry={nodes['Plane369_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.198, 22.806, -19.973]} />
-            <mesh geometry={nodes['Plane370_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.185, 24.193, -19.973]} />
-            <mesh geometry={nodes['Plane371_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.227, 24.712, -19.76]} />
-            <mesh geometry={nodes['Plane372_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-43.82, 24.374, -19.81]} />
-            <mesh geometry={nodes['Plane373_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.233, 25.767, -19.81]} />
-            <mesh geometry={nodes['Plane374_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.104, 23.676, -19.76]} />
-            <mesh geometry={nodes['Plane375_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.438, 26.421, -19.76]} />
-            <mesh geometry={nodes['Plane376_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.586, 30.432, -19.76]} />
-            <mesh geometry={nodes['Plane377_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.655, 27.257, -19.778]} />
-            <mesh geometry={nodes['Plane378_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.546, 27.876, -19.76]} />
-            <mesh geometry={nodes['Plane379_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.571, 28.622, -19.76]} />
-            <mesh geometry={nodes['Plane380_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.598, 29.595, -19.76]} />
-            <mesh geometry={nodes['Plane381_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.428, 32.119, -19.81]} />
-            <mesh geometry={nodes['Plane382_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.241, 30.812, -19.76]} />
-            <mesh geometry={nodes['Plane383_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.861, 32.613, -19.76]} />
-            <mesh geometry={nodes['Plane384_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-47.755, 23.618, -19.973]} />
-            <mesh geometry={nodes['Plane385_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-46.419, 23.623, -19.81]} />
-            <mesh geometry={nodes['Plane386_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-47.242, 23.558, -19.973]} />
-            <mesh geometry={nodes['Plane387_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-45.855, 23.545, -19.973]} />
-            <mesh geometry={nodes['Plane388_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-45.337, 23.587, -19.76]} />
-            <mesh geometry={nodes['Plane389_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-45.674, 23.18, -19.81]} />
-            <mesh geometry={nodes['Plane390_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.281, 23.593, -19.81]} />
-            <mesh geometry={nodes['Plane391_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-46.372, 23.464, -19.76]} />
-            <mesh geometry={nodes['Plane392_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.077, 13.588, -19.76]} />
-            <mesh geometry={nodes['Plane393_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.224, 14.945, -19.81]} />
-            <mesh geometry={nodes['Plane394_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.239, 14.251, -19.76]} />
-            <mesh geometry={nodes['Plane395_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-62.82, 17.104, -19.76]} />
-            <mesh geometry={nodes['Plane396_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-60.981, 17.192, -19.76]} />
-            <mesh geometry={nodes['Plane397_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-60.744, 17.397, -19.81]} />
-            <mesh geometry={nodes['Plane398_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-61.708, 17.202, -19.973]} />
-            <mesh geometry={nodes['Plane399_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-63.771, 17.121, -19.81]} />
-            <mesh geometry={nodes['Plane400_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-64.392, 17.16, -19.76]} />
-            <mesh geometry={nodes['Plane401_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-63.883, 17.36, -19.81]} />
-            <mesh geometry={nodes['Plane402_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-62.509, 17.216, -19.76]} />
-            <mesh geometry={nodes['Plane403_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-63.604, 16.75, -19.81]} />
-            <mesh geometry={nodes['Plane404_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-63.27, 17.044, -19.76]} />
-            <mesh geometry={nodes['Plane405_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-60.077, 17.293, -19.677]} />
-            <mesh geometry={nodes['Plane406_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-57.69, 17.325, -19.695]} />
-            <mesh geometry={nodes['Plane407_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-58.508, 17.184, -19.677]} />
-            <mesh geometry={nodes['Plane408_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-59.023, 17.001, -19.834]} />
-            <mesh geometry={nodes['Plane409_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-59.625, 17.337, -19.677]} />
-            <mesh geometry={nodes['Plane410_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-57.251, 17.181, -19.695]} />
-            <mesh geometry={nodes['Plane411_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-56.43, 17.303, -19.677]} />
-            <mesh geometry={nodes['Plane412_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-55.911, 17.475, -19.851]} />
-            <mesh geometry={nodes['Plane413_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.175, 33.197, -19.76]} />
-            <mesh geometry={nodes['Plane414_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.014, 33.109, -19.76]} />
-            <mesh geometry={nodes['Plane415_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.251, 32.904, -19.81]} />
-            <mesh geometry={nodes['Plane416_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-40.287, 33.099, -19.973]} />
-            <mesh geometry={nodes['Plane417_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-38.224, 33.18, -19.81]} />
-            <mesh geometry={nodes['Plane418_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-37.603, 33.141, -19.76]} />
-            <mesh geometry={nodes['Plane419_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-38.112, 32.941, -19.81]} />
-            <mesh geometry={nodes['Plane420_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.486, 33.086, -19.76]} />
-            <mesh geometry={nodes['Plane421_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-38.391, 33.551, -19.81]} />
-            <mesh geometry={nodes['Plane422_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-38.725, 33.257, -19.76]} />
-            <mesh geometry={nodes['Plane423_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-41.918, 33.008, -19.677]} />
-            <mesh geometry={nodes['Plane424_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.305, 32.976, -19.695]} />
-            <mesh geometry={nodes['Plane425_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-43.487, 33.117, -19.677]} />
-            <mesh geometry={nodes['Plane426_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-42.972, 33.3, -19.834]} />
-            <mesh geometry={nodes['Plane427_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-42.37, 32.964, -19.677]} />
-            <mesh geometry={nodes['Plane428_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-44.744, 33.12, -19.695]} />
-            <mesh geometry={nodes['Plane429_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-45.564, 32.998, -19.677]} />
-            <mesh geometry={nodes['Plane430_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-46.084, 32.826, -19.851]} />
-            <mesh geometry={nodes['Plane431_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.249, 36.141, -19.76]} />
-            <mesh geometry={nodes['Plane432_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.525, 34.925, -19.76]} />
-            <mesh geometry={nodes['Plane433_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.637, 35.32, -19.81]} />
-            <mesh geometry={nodes['Plane434_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.25, 34.058, -19.76]} />
-            <mesh geometry={nodes['Plane435_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.69, 36.804, -19.76]} />
-            <mesh geometry={nodes['Plane436_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-40.092, 33.373, -19.76]} />
-            <mesh geometry={nodes['Plane437_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-39.261, 33.491, -19.81]} />
-            <mesh geometry={nodes['Plane438_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-29.357, 33.308, -19.677]} />
-            <mesh geometry={nodes['Plane439_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-29.808, 32.997, -19.834]} />
-            <mesh geometry={nodes['Plane440_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-30.476, 33.166, -19.677]} />
-            <mesh geometry={nodes['Plane441_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-8.011, 45.677, -19.76]} />
-            <mesh geometry={nodes['Plane442_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-8.183, 46.438, -19.76]} />
-            <mesh geometry={nodes['Plane443_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-7.934, 43.245, -19.677]} />
-            <mesh geometry={nodes['Plane444_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-7.902, 40.858, -19.695]} />
-            <mesh geometry={nodes['Plane445_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-8.043, 41.675, -19.677]} />
-            <mesh geometry={nodes['Plane446_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-8.226, 42.191, -19.851]} />
-            <mesh geometry={nodes['Plane447_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-7.89, 42.793, -19.677]} />
-            <mesh geometry={nodes['Plane448_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-7.752, 39.079, -19.851]} />
-            <mesh geometry={nodes['Plane449_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.445, 50.524, -19.76]} />
-            <mesh geometry={nodes['Plane450_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.614, 49.763, -19.76]} />
-            <mesh geometry={nodes['Plane451_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.372, 52.956, -19.677]} />
-            <mesh geometry={nodes['Plane452_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.343, 55.344, -19.695]} />
-            <mesh geometry={nodes['Plane453_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.482, 54.525, -19.677]} />
-            <mesh geometry={nodes['Plane454_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.665, 54.009, -19.851]} />
-            <mesh geometry={nodes['Plane455_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.328, 53.408, -19.677]} />
-            <mesh geometry={nodes['Plane456_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.475, 56.292, -19.851]} />
-            <mesh geometry={nodes['Plane457_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[13.433, 53.676, -19.677]} />
-            <mesh geometry={nodes['Plane458_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[15.8, 53.362, -19.695]} />
-            <mesh geometry={nodes['Plane459_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[14.971, 53.342, -19.677]} />
-            <mesh geometry={nodes['Plane460_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[14.434, 53.235, -19.851]} />
-            <mesh geometry={nodes['Plane461_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[13.887, 53.655, -19.677]} />
-            <mesh geometry={nodes['Plane462_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[17.511, 52.012, -19.851]} />
-            <mesh geometry={nodes['Plane463_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[16.633, 54.448, -19.695]} />
-            <mesh geometry={nodes['Plane464_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[16.093, 53.818, -19.677]} />
-            <mesh geometry={nodes['Plane465_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[23.776, 48.645, -19.677]} />
-            <mesh geometry={nodes['Plane466_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[23.748, 51.033, -19.695]} />
-            <mesh geometry={nodes['Plane467_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[23.887, 50.215, -19.677]} />
-            <mesh geometry={nodes['Plane468_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[23.916, 47.701, -19.851]} />
-            <mesh geometry={nodes['Plane469_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[23.037, 50.138, -19.695]} />
-            <mesh geometry={nodes['Plane470_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[25.048, 49.014, -19.677]} />
-            <mesh geometry={nodes['Plane471_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.093, 49.587, -19.81]} />
-            <mesh geometry={nodes['Plane472_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.311, 49.393, -19.778]} />
-            <mesh geometry={nodes['Plane473_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.262, 48.886, -19.76]} />
-            <mesh geometry={nodes['Plane474_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.833, 49.031, -19.973]} />
-            <mesh geometry={nodes['Plane475_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.63, 48.058, -19.81]} />
-            <mesh geometry={nodes['Plane476_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.413, 50.757, -19.76]} />
-            <mesh geometry={nodes['Plane477_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[36.496, 48.814, -19.76]} />
-            <mesh geometry={nodes['Plane478_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[36.506, 49.033, -19.973]} />
-            <mesh geometry={nodes['Plane479_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[36.678, 49.229, -19.973]} />
-            <mesh geometry={nodes['Plane480_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[35.457, 48.98, -19.76]} />
-            <mesh geometry={nodes['Plane481_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.595, 51.383, -19.81]} />
-            <mesh geometry={nodes['Plane482_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.53, 47.146, -19.76]} />
-            <mesh geometry={nodes['Plane483_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.486, 52.844, -19.973]} />
-            <mesh geometry={nodes['Plane484_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.684, 53.035, -19.973]} />
-            <mesh geometry={nodes['Plane485_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[37.881, 48.531, -19.729]} />
-            <mesh geometry={nodes['Plane486_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[41.491, 48.978, -19.878]} />
-            <mesh geometry={nodes['Plane487_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.568, 51.811, -19.76]} />
-            <mesh geometry={nodes['Plane488_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[38.115, 49.245, -19.81]} />
-            <mesh geometry={nodes['Plane489_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[38.519, 48.716, -19.76]} />
-            <mesh geometry={nodes['Plane490_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[38.981, 48.756, -19.81]} />
-            <mesh geometry={nodes['Plane491_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[38.066, 48.175, -19.81]} />
-            <mesh geometry={nodes['Plane492_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[37.231, 49.355, -19.76]} />
-            <mesh geometry={nodes['Plane493_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[38.584, 49.25, -19.76]} />
-            <mesh geometry={nodes['Plane494_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.616, 49.461, -19.878]} />
-            <mesh geometry={nodes['Plane495_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.237, 49.816, -19.76]} />
-            <mesh geometry={nodes['Plane496_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.59, 50.027, -19.81]} />
-            <mesh geometry={nodes['Plane497_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[39.562, 50.692, -19.76]} />
-            <mesh geometry={nodes['Plane498_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[40.251, 49.43, -19.76]} />
-            <mesh geometry={nodes['Plane499_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.078, 35.686, -19.76]} />
-            <mesh geometry={nodes['Plane500_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.179, 33.847, -19.76]} />
-            <mesh geometry={nodes['Plane501_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.385, 33.612, -19.81]} />
-            <mesh geometry={nodes['Plane502_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.184, 34.575, -19.973]} />
-            <mesh geometry={nodes['Plane503_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.09, 36.637, -19.81]} />
-            <mesh geometry={nodes['Plane504_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.124, 37.259, -19.76]} />
-            <mesh geometry={nodes['Plane505_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.328, 36.751, -19.81]} />
-            <mesh geometry={nodes['Plane506_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.192, 35.376, -19.76]} />
-            <mesh geometry={nodes['Plane507_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[70.719, 36.468, -19.81]} />
-            <mesh geometry={nodes['Plane508_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.016, 36.136, -19.76]} />
-            <mesh geometry={nodes['Plane509_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.285, 32.945, -19.677]} />
-            <mesh geometry={nodes['Plane510_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.333, 30.557, -19.695]} />
-            <mesh geometry={nodes['Plane511_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.187, 31.374, -19.677]} />
-            <mesh geometry={nodes['Plane512_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.001, 31.889, -19.834]} />
-            <mesh geometry={nodes['Plane513_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.333, 32.493, -19.677]} />
-            <mesh geometry={nodes['Plane514_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.192, 30.118, -19.695]} />
-            <mesh geometry={nodes['Plane515_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.32, 29.298, -19.677]} />
-            <mesh geometry={nodes['Plane516_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.494, 28.779, -19.851]} />
-            <mesh geometry={nodes['Plane517_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.273, 24.254, -19.76]} />
-            <mesh geometry={nodes['Plane518_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.249, 26.095, -19.76]} />
-            <mesh geometry={nodes['Plane519_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.053, 26.339, -19.81]} />
-            <mesh geometry={nodes['Plane520_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.214, 25.368, -19.973]} />
-            <mesh geometry={nodes['Plane521_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.222, 23.304, -19.81]} />
-            <mesh geometry={nodes['Plane522_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.162, 22.684, -19.76]} />
-            <mesh geometry={nodes['Plane523_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[70.979, 23.2, -19.81]} />
-            <mesh geometry={nodes['Plane524_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.172, 24.568, -19.76]} />
-            <mesh geometry={nodes['Plane525_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.599, 23.457, -19.81]} />
-            <mesh geometry={nodes['Plane526_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.316, 23.802, -19.76]} />
-            <mesh geometry={nodes['Plane527_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.181, 27.001, -19.677]} />
-            <mesh geometry={nodes['Plane528_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.232, 29.389, -19.695]} />
-            <mesh geometry={nodes['Plane529_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.344, 28.566, -19.677]} />
-            <mesh geometry={nodes['Plane530_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.509, 28.045, -19.834]} />
-            <mesh geometry={nodes['Plane531_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.152, 27.455, -19.677]} />
-            <mesh geometry={nodes['Plane532_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.391, 29.822, -19.695]} />
-            <mesh geometry={nodes['Plane533_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.298, 30.646, -19.677]} />
-            <mesh geometry={nodes['Plane534_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.145, 31.172, -19.851]} />
-            <mesh geometry={nodes['Plane535_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.57, 14.797, -19.76]} />
-            <mesh geometry={nodes['Plane536_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.593, 13.681, -19.973]} />
-            <mesh geometry={nodes['Plane537_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.651, 15.745, -19.81]} />
-            <mesh geometry={nodes['Plane538_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.731, 16.362, -19.76]} />
-            <mesh geometry={nodes['Plane539_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.897, 15.84, -19.81]} />
-            <mesh geometry={nodes['Plane540_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.66, 14.479, -19.76]} />
-            <mesh geometry={nodes['Plane541_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.269, 15.603, -19.81]} />
-            <mesh geometry={nodes['Plane542_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.541, 15.25, -19.76]} />
-            <mesh geometry={nodes['Plane543_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.741, 17.151, -19.76]} />
-            <mesh geometry={nodes['Plane544_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[73.582, 17.167, -19.76]} />
-            <mesh geometry={nodes['Plane545_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[73.827, 17.363, -19.81]} />
-            <mesh geometry={nodes['Plane546_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[72.856, 17.205, -19.973]} />
-            <mesh geometry={nodes['Plane547_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[70.791, 17.205, -19.81]} />
-            <mesh geometry={nodes['Plane548_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[70.172, 17.268, -19.76]} />
-            <mesh geometry={nodes['Plane549_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[70.689, 17.448, -19.81]} />
-            <mesh geometry={nodes['Plane550_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[72.056, 17.25, -19.76]} />
-            <mesh geometry={nodes['Plane551_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[70.943, 16.828, -19.81]} />
-            <mesh geometry={nodes['Plane552_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.289, 17.109, -19.76]} />
-            <mesh geometry={nodes['Plane553_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[74.489, 17.232, -19.677]} />
-            <mesh geometry={nodes['Plane554_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[76.053, 17.062, -19.677]} />
-            <mesh geometry={nodes['Plane555_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[75.531, 16.899, -19.834]} />
-            <mesh geometry={nodes['Plane556_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[74.942, 17.259, -19.677]} />
-            <mesh geometry={nodes['Plane557_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.203, 18.101, -19.76]} />
-            <mesh geometry={nodes['Plane558_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.44, 19.656, -19.76]} />
-            <mesh geometry={nodes['Plane559_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[70.942, 18.921, -19.81]} />
-            <mesh geometry={nodes['Plane560_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[71.196, 18.555, -19.76]} />
-            <mesh geometry={nodes['Plane561_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-7.79, 50.317, -19.677]} />
-            <mesh geometry={nodes['Plane562_03_-_Default_0'].geometry} material={materials['03_-_Default']} position={[-7.758, 47.929, -19.695]} />
+          <group
+            position={[-7.867, 20.292, 4.376]}
+            rotation={[-Math.PI / 2, 0, 0]}
+          >
+            <mesh
+              geometry={nodes["Cylinder054_01_-_Default_0"].geometry}
+              material={materials["01_-_Default"]}
+              position={[8.647, -30.511, 21.142]}
+            />
+            <mesh
+              geometry={nodes["Ground_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-0.041, 9.301, -21.838]}
+            />
+            <mesh
+              geometry={nodes["Plane290_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.308, -0.807, -19.76]}
+            />
+            <mesh
+              geometry={nodes["chair_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-42.934, -35.393, -12.284]}
+            />
+            <mesh
+              geometry={nodes["Cylinder065_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-33.827, -24.323, -2.623]}
+            />
+            <mesh
+              geometry={nodes["Object077_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.867, 4.376, -20.311]}
+            />
+            <mesh
+              geometry={nodes["Line028_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.867, 4.376, -20.311]}
+            />
+            <mesh
+              geometry={nodes["Cylinder027_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.867, 4.376, -20.311]}
+            />
+            <mesh
+              geometry={nodes["Box862_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[47.2, 14.946, -17.268]}
+            />
+            <mesh
+              geometry={nodes["Object105_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.185, -29.821, -19.96]}
+            />
+            <mesh
+              geometry={nodes["Plane006_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.78, -43.029, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Box009_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[48.242, -19.222, -19.999]}
+            />
+            <mesh
+              geometry={nodes["Box011_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[47.761, -8.716, -19.999]}
+            />
+            <mesh
+              geometry={nodes["table_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-36.538, -20.256, -7.89]}
+            />
+            <mesh
+              geometry={nodes["Cylinder063_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-33.827, -24.323, -6.849]}
+            />
+            <mesh
+              geometry={nodes["Box863_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.867, 4.376, -20.311]}
+            />
+            <mesh
+              geometry={nodes["Object1340222_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-13.835, -30.934, -0.455]}
+            />
+            <mesh
+              geometry={nodes["Object002_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-16.436, -31.812, -0.455]}
+            />
+            <mesh
+              geometry={nodes["Object1340221_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.867, 4.376, -20.292]}
+            />
+            <mesh
+              geometry={nodes["Object1340223_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-14.783, -32.156, -0.455]}
+            />
+            <mesh
+              geometry={nodes["Plane007_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.38, -43.646, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane008_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.834, -43.853, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane009_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.546, -44.589, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane010_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.104, -44.863, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane011_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.555, -45.168, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane012_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.654, -44.912, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane013_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.992, -44.467, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane014_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.217, -47.585, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane015_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.475, -46.886, -19.729]}
+            />
+            <mesh
+              geometry={nodes["Plane016_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.881, -45.879, -19.878]}
+            />
+            <mesh
+              geometry={nodes["Plane017_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.379, -45.729, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane018_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.384, -46.141, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane019_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.974, -46.449, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane020_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[41.376, -46.218, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane021_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[42.103, -46.121, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane022_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[43.113, -46.183, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane023_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[42.713, -46.374, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane024_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.435, -47.778, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane025_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.792, -47.131, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane026_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.865, -42.466, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane027_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.385, -48.286, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane028_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.957, -48.14, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane029_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.754, -49.113, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane030_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[41.953, -46.625, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane031_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[41.072, -47.426, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane032_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.83, -41.947, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane033_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.233, -42.29, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane034_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.837, -40.891, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane035_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.939, -42.984, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane036_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.641, -40.234, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane037_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.537, -46.414, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane038_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.869, -45.529, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane039_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-14.392, -30.503, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane040_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-7.076, -30.397, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane041_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-15.214, -30.587, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane042_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-8.012, -30.598, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane043_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-16.213, -30.894, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane044_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-16.539, -30.357, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane045_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-16.279, -30.446, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane046_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-15.822, -30.768, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane047_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-19.27, -30.306, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane048_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-12.133, -30.501, -19.729]}
+            />
+            <mesh
+              geometry={nodes["Plane049_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-17.217, -30.471, -19.878]}
+            />
+            <mesh
+              geometry={nodes["Plane050_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-9.157, -30.473, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane051_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-11.392, -30.384, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane052_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-21.537, -30.443, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane053_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-10.046, -30.476, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane054_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-23.375, -30.532, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane055_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-23.612, -30.737, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane056_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-22.648, -30.541, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane057_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-19.151, -30.332, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane058_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-20.585, -30.461, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane059_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-13.827, -30.567, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane060_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-19.964, -30.499, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane061_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-19.494, -30.867, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane062_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-20.473, -30.7, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane063_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-21.847, -30.555, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane064_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-20.752, -30.089, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane065_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-13.309, -30.514, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane066_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-14.766, -30.452, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane067_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-12.254, -30.482, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane068_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-14.341, -30.661, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane069_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-17.784, -30.384, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane070_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-10.753, -30.409, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane071_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-8.555, -30.397, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane072_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-9.614, -30.409, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane073_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-12.779, -30.768, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane074_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-11.223, -30.514, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane075_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-21.086, -30.384, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane076_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-17.5, -30.587, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane077_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-18.499, -30.514, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane078_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-18.17, -30.768, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane079_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-23.708, -35.53, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane080_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-23.385, -32.818, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane081_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-23.754, -34.844, -19.878]}
+            />
+            <mesh
+              geometry={nodes["Plane082_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-23.423, -32.933, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane083_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-23.408, -31.493, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane084_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-23.508, -32.107, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane085_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-23.657, -32.539, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane086_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-23.657, -31.581, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane087_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-23.611, -34.288, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane088_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-23.669, -33.564, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane089_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-23.954, -33.866, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane090_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-24.279, -30.632, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane091_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-26.667, -30.665, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane092_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-25.849, -30.524, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane093_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-25.333, -30.341, -19.824]}
+            />
+            <mesh
+              geometry={nodes["Plane094_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-24.731, -30.677, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane095_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.641, -37.379, -19.729]}
+            />
+            <mesh
+              geometry={nodes["Plane096_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.545, -36.222, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane097_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.435, -39.396, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane098_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.552, -38.779, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane099_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.537, -38.032, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane100_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.833, -49.056, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane101_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.831, -48.23, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane102_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.167, -47.45, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane103_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.625, -47.205, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane104_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[8.192, -46.934, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane105_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.712, -47.607, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane106_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.406, -46.323, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane107_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[5.71, -45.824, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane108_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.713, -49.612, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane109_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.715, -50.132, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane110_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.335, -49.765, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane111_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.642, -51.185, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane112_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.672, -49.09, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane113_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.797, -51.853, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane114_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[6.903, -46.492, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane115_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.64, -55.864, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane116_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.95, -52.703, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane117_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.794, -53.312, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane118_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.618, -54.057, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane119_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.707, -43.292, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane120_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.968, -44.282, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane121_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.448, -44.305, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane122_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.544, -43.905, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane123_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.265, -45.195, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane124_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.79, -45.26, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane125_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.144, -45.87, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane126_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[6.77, -45.51, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane127_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[6.338, -45.053, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane128_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[6.611, -45.086, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane129_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[4.16, -46.291, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane130_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[4.901, -46.368, -19.729]}
+            />
+            <mesh
+              geometry={nodes["Plane131_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[5.73, -45.545, -19.878]}
+            />
+            <mesh
+              geometry={nodes["Plane132_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[5.998, -45.99, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane133_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[5.601, -46.097, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane134_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[5.448, -46.744, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane135_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[5.771, -47.076, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane136_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.543, -42.119, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane137_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.732, -43.114, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane138_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.448, -42.774, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane139_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[3.779, -45.58, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane140_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[4.742, -46.736, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane141_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[3.522, -46.627, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane142_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[3.558, -46.175, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane143_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[2.565, -46.219, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane144_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.711, -40.938, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane145_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[4.525, -47.08, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane146_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[5.127, -45.343, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane147_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[6.313, -46.416, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane148_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[7.715, -55.029, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane149_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.193, -43.247, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane150_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.201, -44.073, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane151_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.309, -42.69, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane152_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.303, -42.17, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane153_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.686, -42.534, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane154_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.369, -41.116, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane155_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.354, -43.211, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane156_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.209, -40.449, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane157_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.338, -36.438, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane158_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.05, -39.601, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane159_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.202, -38.991, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane160_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.228, -38.245, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane161_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.268, -37.273, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane162_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.206, -45.408, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane163_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.141, -44.585, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane164_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.129, -45.972, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane165_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.17, -46.491, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane166_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[16.763, -46.153, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane167_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.177, -47.547, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane168_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.048, -45.455, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane169_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.382, -48.201, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane170_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.529, -52.211, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane171_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.599, -49.036, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane172_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.489, -49.655, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane173_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.514, -50.401, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane174_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.541, -51.374, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane175_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.371, -53.899, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane176_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.184, -52.592, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane177_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.195, -55.372, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane178_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-1.072, -30.461, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane179_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-4.129, -30.306, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane180_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-3.358, -30.514, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane181_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-3.029, -30.413, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Object1340224_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-7.735, -30.745, -0.455]}
+            />
+            <mesh
+              geometry={nodes["Object1340225_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-8.665, -31.86, -0.455]}
+            />
+            <mesh
+              geometry={nodes["Object1340226_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-9.84, -30.769, -0.455]}
+            />
+            <mesh
+              geometry={nodes["Object1340227_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-11.318, -32.054, -0.455]}
+            />
+            <mesh
+              geometry={nodes["Object1340228_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-12.644, -31.329, -0.455]}
+            />
+            <mesh
+              geometry={nodes["Object1340229_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-6.711, -31.329, -0.455]}
+            />
+            <mesh
+              geometry={nodes["Object1340230_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-10.907, -30.745, -0.455]}
+            />
+            <mesh
+              geometry={nodes["Box865_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-17.438, 49.047, -17.268]}
+            />
+            <mesh
+              geometry={nodes["Plane182_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-48.77, -30.306, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane183_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-51.036, -30.443, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane184_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-52.875, -30.532, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane185_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-53.112, -30.737, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane186_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-52.148, -30.541, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane187_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-48.651, -30.332, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane188_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-50.085, -30.461, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane189_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-49.464, -30.499, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane190_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-48.994, -30.867, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane191_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-49.973, -30.7, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane192_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-51.347, -30.555, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane193_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-50.252, -30.089, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane194_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-50.586, -30.384, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane195_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-53.779, -30.632, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane196_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-56.167, -30.665, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane197_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-55.349, -30.524, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane198_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-54.833, -30.341, -19.851]}
+            />
+            <mesh
+              geometry={nodes["Plane199_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-54.231, -30.677, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane200_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-64.008, -30.713, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane201_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-61.739, -30.626, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane202_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-59.898, -30.579, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane203_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-59.657, -30.38, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane204_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-60.625, -30.553, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane205_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-64.126, -30.684, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane206_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-62.69, -30.587, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane207_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-63.309, -30.535, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane208_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-63.771, -30.157, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane209_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-62.796, -30.346, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane210_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-61.425, -30.521, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane211_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-62.531, -30.962, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane212_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-62.19, -30.675, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane213_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-58.993, -30.499, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane214_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-56.605, -30.521, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane215_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-57.426, -30.643, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane216_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-57.945, -30.814, -19.851]}
+            />
+            <mesh
+              geometry={nodes["Plane217_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-58.54, -30.465, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane218_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.427, -33.455, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane219_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.431, -31.067, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane220_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.3, -31.886, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane221_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.123, -32.404, -19.828]}
+            />
+            <mesh
+              geometry={nodes["Plane222_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.466, -33.002, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane223_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.104, -27.58, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane224_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.232, -28.243, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane225_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.282, -30.63, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane226_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.394, -29.808, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane227_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.559, -29.286, -19.82]}
+            />
+            <mesh
+              geometry={nodes["Plane228_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.203, -28.696, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane229_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-70.174, -30.713, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane230_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-67.904, -30.626, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane231_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-70.291, -30.684, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane232_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-68.855, -30.587, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane233_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-69.475, -30.535, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane234_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-69.937, -30.157, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane235_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-68.961, -30.346, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane236_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-67.591, -30.521, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane237_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-68.697, -30.962, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane238_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-68.356, -30.675, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane239_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.362, -23.095, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane240_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.389, -23.769, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane241_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.315, -25.341, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane242_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.557, -24.85, -19.828]}
+            />
+            <mesh
+              geometry={nodes["Plane243_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-71.293, -24.213, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane244_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.753, 5.654, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane245_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.153, 5.036, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane246_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.698, 4.829, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane247_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-43.987, 4.093, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane248_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.429, 3.819, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane249_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.978, 3.514, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane250_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.879, 3.77, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane251_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.54, 4.215, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane252_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.316, 1.097, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane253_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.058, 1.796, -19.729]}
+            />
+            <mesh
+              geometry={nodes["Plane254_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.651, 2.803, -19.878]}
+            />
+            <mesh
+              geometry={nodes["Plane255_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.154, 2.953, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane256_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.148, 2.542, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane257_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-43.558, 2.233, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane258_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-43.157, 2.464, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane259_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-42.43, 2.562, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane260_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.419, 2.499, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane261_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.819, 2.308, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane262_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-45.098, 0.904, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane263_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-43.74, 1.551, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane264_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.668, 6.216, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane265_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.147, 0.396, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane266_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.576, 0.542, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane267_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.779, -0.431, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane268_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-42.58, 2.057, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane269_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-43.46, 1.256, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane270_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.702, 6.735, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane271_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.3, 6.393, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane272_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.695, 7.791, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane273_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.593, 5.698, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane274_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.892, 8.448, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane275_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.996, 2.268, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane276_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-43.663, 3.153, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane277_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-36.693, 0.694, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane278_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-36.851, 1.255, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane279_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-37.646, 0.61, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane280_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-37.881, 1.074, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane281_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-38.137, 1.647, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane282_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-37.89, 1.527, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane283_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-37.477, 1.151, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane284_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.928, 0.881, -19.729]}
+            />
+            <mesh
+              geometry={nodes["Plane285_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-38.874, 1.385, -19.878]}
+            />
+            <mesh
+              geometry={nodes["Plane286_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-38.768, 0.876, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane287_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.178, 0.906, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane288_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.536, 0.345, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane289_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.341, -0.075, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane291_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.458, -1.809, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane292_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.614, -1.394, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane293_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-40.2, 0.586, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane294_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.798, -0.614, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane295_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-35.994, 1.074, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane296_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.377, 1.774, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane297_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-38.611, 0.37, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane298_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-40.313, 1.964, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane299_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-40.819, 2.083, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane300_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.424, 2.254, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane301_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.172, 2.366, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane302_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.988, 0.39, -19.729]}
+            />
+            <mesh
+              geometry={nodes["Plane303_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.696, 1.521, -19.878]}
+            />
+            <mesh
+              geometry={nodes["Plane304_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.238, 1.276, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane305_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.525, 0.981, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane306_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.326, 0.346, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane307_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-40.878, 0.225, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane308_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.937, -0.008, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane309_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-42.318, 1.386, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane310_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-40.749, 1.07, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane311_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-47.897, -0.194, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane312_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-47.913, 0.325, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane313_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-47.903, 0.954, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane314_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-47.73, 0.74, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane315_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-49.85, 1.016, -19.729]}
+            />
+            <mesh
+              geometry={nodes["Plane316_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-48.682, 1.027, -19.878]}
+            />
+            <mesh
+              geometry={nodes["Plane317_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-48.801, 0.521, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane318_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-49.16, 0.721, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane319_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-49.722, 0.365, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane320_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-49.722, -0.099, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane321_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-50.221, 0.863, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane322_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-48.973, 1.592, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane323_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-48.873, -0.004, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane324_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-45.492, 2.094, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane325_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-46.008, 2.032, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane326_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-46.635, 1.987, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane327_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-46.437, 2.178, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane328_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-46.527, 0.042, -19.729]}
+            />
+            <mesh
+              geometry={nodes["Plane329_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-46.64, 1.205, -19.878]}
+            />
+            <mesh
+              geometry={nodes["Plane330_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-46.125, 1.131, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane331_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-46.294, 0.756, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane332_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-45.89, 0.227, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane333_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-45.428, 0.267, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane334_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-46.343, -0.314, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane335_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-47.178, 0.866, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane336_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-45.596, 1.105, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane337_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-43.484, 2.115, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane338_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.218, 1.988, -19.729]}
+            />
+            <mesh
+              geometry={nodes["Plane339_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.793, 0.971, -19.878]}
+            />
+            <mesh
+              geometry={nodes["Plane340_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-45.172, 1.327, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane341_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.819, 1.538, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane342_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.847, 2.203, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane343_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-42.925, 1.534, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane344_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.165, 2.386, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane345_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-42.961, 2.611, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane346_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-42.873, 2.167, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane347_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.929, 2.478, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane348_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.049, 2.776, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane349_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.158, 0.941, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane350_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-43.759, 0.598, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane351_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-43.448, 0.182, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane352_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-43.095, -0.339, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane353_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-43.359, -0.262, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane354_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.465, 0.727, -19.729]}
+            />
+            <mesh
+              geometry={nodes["Plane355_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-42.415, 0.048, -19.878]}
+            />
+            <mesh
+              geometry={nodes["Plane356_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-42.608, 0.531, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane357_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-42.199, 0.572, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane358_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.943, 1.187, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane359_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-42.209, 1.567, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane360_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.248, 1.065, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane361_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.852, -0.248, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane362_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-42.85, 1.002, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane363_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.686, -8.699, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane364_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.649, -7.441, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane365_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.815, -6.919, -19.727]}
+            />
+            <mesh
+              geometry={nodes["Plane366_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.458, -6.329, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane367_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.257, 22.293, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane368_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.263, 23.629, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane369_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.198, 22.806, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane370_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.185, 24.193, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane371_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.227, 24.712, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane372_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-43.82, 24.374, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane373_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.233, 25.767, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane374_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.104, 23.676, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane375_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.438, 26.421, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane376_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.586, 30.432, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane377_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.655, 27.257, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane378_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.546, 27.876, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane379_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.571, 28.622, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane380_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.598, 29.595, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane381_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.428, 32.119, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane382_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.241, 30.812, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane383_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.861, 32.613, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane384_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-47.755, 23.618, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane385_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-46.419, 23.623, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane386_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-47.242, 23.558, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane387_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-45.855, 23.545, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane388_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-45.337, 23.587, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane389_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-45.674, 23.18, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane390_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.281, 23.593, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane391_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-46.372, 23.464, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane392_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.077, 13.588, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane393_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.224, 14.945, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane394_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.239, 14.251, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane395_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-62.82, 17.104, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane396_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-60.981, 17.192, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane397_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-60.744, 17.397, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane398_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-61.708, 17.202, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane399_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-63.771, 17.121, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane400_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-64.392, 17.16, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane401_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-63.883, 17.36, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane402_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-62.509, 17.216, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane403_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-63.604, 16.75, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane404_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-63.27, 17.044, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane405_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-60.077, 17.293, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane406_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-57.69, 17.325, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane407_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-58.508, 17.184, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane408_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-59.023, 17.001, -19.834]}
+            />
+            <mesh
+              geometry={nodes["Plane409_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-59.625, 17.337, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane410_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-57.251, 17.181, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane411_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-56.43, 17.303, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane412_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-55.911, 17.475, -19.851]}
+            />
+            <mesh
+              geometry={nodes["Plane413_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.175, 33.197, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane414_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.014, 33.109, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane415_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.251, 32.904, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane416_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-40.287, 33.099, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane417_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-38.224, 33.18, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane418_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-37.603, 33.141, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane419_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-38.112, 32.941, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane420_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.486, 33.086, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane421_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-38.391, 33.551, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane422_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-38.725, 33.257, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane423_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-41.918, 33.008, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane424_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.305, 32.976, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane425_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-43.487, 33.117, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane426_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-42.972, 33.3, -19.834]}
+            />
+            <mesh
+              geometry={nodes["Plane427_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-42.37, 32.964, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane428_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-44.744, 33.12, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane429_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-45.564, 32.998, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane430_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-46.084, 32.826, -19.851]}
+            />
+            <mesh
+              geometry={nodes["Plane431_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.249, 36.141, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane432_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.525, 34.925, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane433_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.637, 35.32, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane434_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.25, 34.058, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane435_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.69, 36.804, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane436_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-40.092, 33.373, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane437_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-39.261, 33.491, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane438_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-29.357, 33.308, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane439_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-29.808, 32.997, -19.834]}
+            />
+            <mesh
+              geometry={nodes["Plane440_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-30.476, 33.166, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane441_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-8.011, 45.677, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane442_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-8.183, 46.438, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane443_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-7.934, 43.245, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane444_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-7.902, 40.858, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane445_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-8.043, 41.675, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane446_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-8.226, 42.191, -19.851]}
+            />
+            <mesh
+              geometry={nodes["Plane447_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-7.89, 42.793, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane448_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-7.752, 39.079, -19.851]}
+            />
+            <mesh
+              geometry={nodes["Plane449_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.445, 50.524, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane450_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.614, 49.763, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane451_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.372, 52.956, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane452_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.343, 55.344, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane453_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.482, 54.525, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane454_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.665, 54.009, -19.851]}
+            />
+            <mesh
+              geometry={nodes["Plane455_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.328, 53.408, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane456_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.475, 56.292, -19.851]}
+            />
+            <mesh
+              geometry={nodes["Plane457_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[13.433, 53.676, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane458_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[15.8, 53.362, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane459_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[14.971, 53.342, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane460_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[14.434, 53.235, -19.851]}
+            />
+            <mesh
+              geometry={nodes["Plane461_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[13.887, 53.655, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane462_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[17.511, 52.012, -19.851]}
+            />
+            <mesh
+              geometry={nodes["Plane463_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[16.633, 54.448, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane464_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[16.093, 53.818, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane465_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[23.776, 48.645, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane466_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[23.748, 51.033, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane467_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[23.887, 50.215, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane468_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[23.916, 47.701, -19.851]}
+            />
+            <mesh
+              geometry={nodes["Plane469_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[23.037, 50.138, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane470_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[25.048, 49.014, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane471_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.093, 49.587, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane472_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.311, 49.393, -19.778]}
+            />
+            <mesh
+              geometry={nodes["Plane473_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.262, 48.886, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane474_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.833, 49.031, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane475_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.63, 48.058, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane476_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.413, 50.757, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane477_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[36.496, 48.814, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane478_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[36.506, 49.033, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane479_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[36.678, 49.229, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane480_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[35.457, 48.98, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane481_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.595, 51.383, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane482_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.53, 47.146, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane483_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.486, 52.844, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane484_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.684, 53.035, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane485_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[37.881, 48.531, -19.729]}
+            />
+            <mesh
+              geometry={nodes["Plane486_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[41.491, 48.978, -19.878]}
+            />
+            <mesh
+              geometry={nodes["Plane487_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.568, 51.811, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane488_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[38.115, 49.245, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane489_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[38.519, 48.716, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane490_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[38.981, 48.756, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane491_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[38.066, 48.175, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane492_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[37.231, 49.355, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane493_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[38.584, 49.25, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane494_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.616, 49.461, -19.878]}
+            />
+            <mesh
+              geometry={nodes["Plane495_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.237, 49.816, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane496_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.59, 50.027, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane497_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[39.562, 50.692, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane498_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[40.251, 49.43, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane499_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.078, 35.686, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane500_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.179, 33.847, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane501_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.385, 33.612, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane502_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.184, 34.575, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane503_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.09, 36.637, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane504_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.124, 37.259, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane505_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.328, 36.751, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane506_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.192, 35.376, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane507_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[70.719, 36.468, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane508_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.016, 36.136, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane509_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.285, 32.945, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane510_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.333, 30.557, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane511_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.187, 31.374, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane512_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.001, 31.889, -19.834]}
+            />
+            <mesh
+              geometry={nodes["Plane513_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.333, 32.493, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane514_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.192, 30.118, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane515_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.32, 29.298, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane516_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.494, 28.779, -19.851]}
+            />
+            <mesh
+              geometry={nodes["Plane517_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.273, 24.254, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane518_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.249, 26.095, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane519_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.053, 26.339, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane520_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.214, 25.368, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane521_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.222, 23.304, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane522_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.162, 22.684, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane523_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[70.979, 23.2, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane524_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.172, 24.568, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane525_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.599, 23.457, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane526_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.316, 23.802, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane527_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.181, 27.001, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane528_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.232, 29.389, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane529_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.344, 28.566, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane530_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.509, 28.045, -19.834]}
+            />
+            <mesh
+              geometry={nodes["Plane531_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.152, 27.455, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane532_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.391, 29.822, -19.695]}
+            />
+            <mesh
+              geometry={nodes["Plane533_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.298, 30.646, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane534_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.145, 31.172, -19.851]}
+            />
+            <mesh
+              geometry={nodes["Plane535_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.57, 14.797, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane536_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.593, 13.681, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane537_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.651, 15.745, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane538_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.731, 16.362, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane539_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.897, 15.84, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane540_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.66, 14.479, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane541_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.269, 15.603, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane542_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.541, 15.25, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane543_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.741, 17.151, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane544_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[73.582, 17.167, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane545_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[73.827, 17.363, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane546_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[72.856, 17.205, -19.973]}
+            />
+            <mesh
+              geometry={nodes["Plane547_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[70.791, 17.205, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane548_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[70.172, 17.268, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane549_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[70.689, 17.448, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane550_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[72.056, 17.25, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane551_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[70.943, 16.828, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane552_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.289, 17.109, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane553_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[74.489, 17.232, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane554_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[76.053, 17.062, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane555_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[75.531, 16.899, -19.834]}
+            />
+            <mesh
+              geometry={nodes["Plane556_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[74.942, 17.259, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane557_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.203, 18.101, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane558_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.44, 19.656, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane559_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[70.942, 18.921, -19.81]}
+            />
+            <mesh
+              geometry={nodes["Plane560_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[71.196, 18.555, -19.76]}
+            />
+            <mesh
+              geometry={nodes["Plane561_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-7.79, 50.317, -19.677]}
+            />
+            <mesh
+              geometry={nodes["Plane562_03_-_Default_0"].geometry}
+              material={materials["03_-_Default"]}
+              position={[-7.758, 47.929, -19.695]}
+            />
           </group>
-          <group position={[-0.061, 33.966, 1.269]} rotation={[-Math.PI / 2, 0, 0]}>
+          <group
+            position={[-0.061, 33.966, 1.269]}
+            rotation={[-Math.PI / 2, 0, 0]}
+          >
             <group position={[-0.003, -0.097, 0]}>
-              <group position={[-4.884, -30.065, -11.144]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340284_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-4.884, -30.065, -11.144]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340284_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-4.884, -30.065, -10.169]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340283_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-4.884, -30.065, -10.169]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340283_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-4.884, -30.065, -13.093]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340282_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-4.884, -30.065, -13.093]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340282_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-4.884, -30.065, -12.119]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340281_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-4.884, -30.065, -12.119]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340281_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-4.884, -30.065, -15.043]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340280_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-4.884, -30.065, -15.043]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340280_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-4.884, -30.065, -14.068]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340279_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-4.884, -30.065, -14.068]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340279_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-15.596, -30.065, -15.043]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340278_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-15.596, -30.065, -15.043]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340278_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-15.596, -30.065, -13.093]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340277_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-15.596, -30.065, -13.093]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340277_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-15.596, -30.065, -14.068]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340276_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-15.596, -30.065, -14.068]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340276_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-15.596, -30.065, -12.119]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340275_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-15.596, -30.065, -12.119]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340275_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-15.596, -30.065, -10.169]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340274_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-15.596, -30.065, -10.169]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340274_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-15.596, -30.065, -11.144]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340273_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-15.596, -30.065, -11.144]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340273_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[24.397, -31.299, -26.227]} rotation={[-3.142, 0, 0]} scale={[0.494, 0.494, 1]}>
-                <mesh geometry={nodes['Cylinder069_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0, 0, 0.73]} />
+              <group
+                position={[24.397, -31.299, -26.227]}
+                rotation={[-3.142, 0, 0]}
+                scale={[0.494, 0.494, 1]}
+              >
+                <mesh
+                  geometry={nodes["Cylinder069_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[0, 0, 0.73]}
+                />
               </group>
               <group position={[-2.018, 1.366, -11.147]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340218_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[3.513, 0, -20.99]} />
+                <mesh
+                  geometry={nodes["Object1340218_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[3.513, 0, -20.99]}
+                />
               </group>
               <group position={[-1.122, 1.366, -11.147]} scale={[1.178, 1, 1]}>
-                <mesh geometry={nodes['Object1340217_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[3.513, 0, -20.99]} />
+                <mesh
+                  geometry={nodes["Object1340217_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[3.513, 0, -20.99]}
+                />
               </group>
-              <group position={[-32.794, -28.287, 20.494]} scale={[1, 1, 1.169]}>
-                <mesh geometry={nodes['Object1340044_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0, 0.744, -2.757]} />
+              <group
+                position={[-32.794, -28.287, 20.494]}
+                scale={[1, 1, 1.169]}
+              >
+                <mesh
+                  geometry={nodes["Object1340044_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[0, 0.744, -2.757]}
+                />
               </group>
-              <group position={[28.203, -28.888, 19.86]} rotation={[Math.PI, 0, -Math.PI / 2]}>
-                <mesh geometry={nodes['Box010_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0, 0, -18.646]} />
+              <group
+                position={[28.203, -28.888, 19.86]}
+                rotation={[Math.PI, 0, -Math.PI / 2]}
+              >
+                <mesh
+                  geometry={nodes["Box010_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[0, 0, -18.646]}
+                />
               </group>
-              <group position={[24.397, -31.299, -8.271]} rotation={[-3.142, 0, 0]} scale={[0.494, 0.494, 1]}>
-                <mesh geometry={nodes['Cylinder044_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0, 0, 0.73]} />
+              <group
+                position={[24.397, -31.299, -8.271]}
+                rotation={[-3.142, 0, 0]}
+                scale={[0.494, 0.494, 1]}
+              >
+                <mesh
+                  geometry={nodes["Cylinder044_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[0, 0, 0.73]}
+                />
               </group>
-              <group position={[-4.884, -30.065, -9.195]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340086_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-4.884, -30.065, -9.195]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340086_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-41.586, -15.319, 23.788]} rotation={[1.309, 0, Math.PI / 2]} scale={[1, 1.565, 6.518]}>
-                <mesh geometry={nodes['Object060_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0.031, 98.093, -11.91]} />
+              <group
+                position={[-41.586, -15.319, 23.788]}
+                rotation={[1.309, 0, Math.PI / 2]}
+                scale={[1, 1.565, 6.518]}
+              >
+                <mesh
+                  geometry={nodes["Object060_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[0.031, 98.093, -11.91]}
+                />
               </group>
-              <group position={[-16.519, 1.456, 19.29]} rotation={[1.309, 0, Math.PI / 2]} scale={[1, 1.565, 6.518]}>
-                <mesh geometry={nodes['Object059_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0.031, 98.093, -11.91]} />
+              <group
+                position={[-16.519, 1.456, 19.29]}
+                rotation={[1.309, 0, Math.PI / 2]}
+                scale={[1, 1.565, 6.518]}
+              >
+                <mesh
+                  geometry={nodes["Object059_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[0.031, 98.093, -11.91]}
+                />
               </group>
-              <group position={[-4.884, -30.065, -6.271]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340082_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-4.884, -30.065, -6.271]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340082_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-4.884, -30.065, -7.245]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340084_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-4.884, -30.065, -7.245]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340084_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-4.884, -30.065, -8.22]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340085_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-4.884, -30.065, -8.22]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340085_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-32.794, -28.287, 20.494]} scale={[1, 1, 1.169]}>
-                <mesh geometry={nodes['Object1340045_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0, 0.744, -2.757]} />
+              <group
+                position={[-32.794, -28.287, 20.494]}
+                scale={[1, 1, 1.169]}
+              >
+                <mesh
+                  geometry={nodes["Object1340045_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[0, 0.744, -2.757]}
+                />
               </group>
-              <group position={[-4.884, -30.065, -6.271]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340083_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-4.884, -30.065, -6.271]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340083_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-14.622, -31.509, 16.792]} rotation={[-Math.PI / 2, Math.PI / 2, 0]} scale={[1, 1.778, 4.688]}>
-                <mesh geometry={nodes['Object018_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0.031, 97.209, -14.708]} />
+              <group
+                position={[-14.622, -31.509, 16.792]}
+                rotation={[-Math.PI / 2, Math.PI / 2, 0]}
+                scale={[1, 1.778, 4.688]}
+              >
+                <mesh
+                  geometry={nodes["Object018_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[0.031, 97.209, -14.708]}
+                />
               </group>
-              <group position={[-15.596, -30.065, -6.271]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340061_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-15.596, -30.065, -6.271]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340061_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-32.794, -28.287, 20.494]} scale={[1, 1, 1.169]}>
-                <mesh geometry={nodes['Object072_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0, 0.744, -2.757]} />
+              <group
+                position={[-32.794, -28.287, 20.494]}
+                scale={[1, 1, 1.169]}
+              >
+                <mesh
+                  geometry={nodes["Object072_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[0, 0.744, -2.757]}
+                />
               </group>
-              <group position={[-15.596, -30.065, -6.271]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340065_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-15.596, -30.065, -6.271]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340065_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-15.596, -30.065, -7.245]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340079_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-15.596, -30.065, -7.245]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340079_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-15.596, -30.065, -8.22]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340080_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-15.596, -30.065, -8.22]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340080_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[-15.596, -30.065, -9.195]} rotation={[0, 0, -Math.PI / 2]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340081_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-25.332, -10.713, -25.898]} />
+              <group
+                position={[-15.596, -30.065, -9.195]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1.12, 1, 1]}
+              >
+                <mesh
+                  geometry={nodes["Object1340081_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[-25.332, -10.713, -25.898]}
+                />
               </group>
-              <group position={[17.309, -29.975, 23.155]} rotation={[Math.PI / 2, Math.PI / 2, 0]} scale={[1, 0.98, 1]}>
-                <mesh geometry={nodes['Box005_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0, 0, -18.646]} />
+              <group
+                position={[17.309, -29.975, 23.155]}
+                rotation={[Math.PI / 2, Math.PI / 2, 0]}
+                scale={[1, 0.98, 1]}
+              >
+                <mesh
+                  geometry={nodes["Box005_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[0, 0, -18.646]}
+                />
               </group>
-              <group position={[17.922, -32.547, 18.543]} rotation={[0, 0, -Math.PI / 2]} scale={[1, 0.939, 1.442]}>
-                <mesh geometry={nodes['Object014_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0.031, 98.093, -11.91]} />
+              <group
+                position={[17.922, -32.547, 18.543]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={[1, 0.939, 1.442]}
+              >
+                <mesh
+                  geometry={nodes["Object014_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[0.031, 98.093, -11.91]}
+                />
               </group>
               <group position={[-2.018, 1.366, -11.147]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object001_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[3.513, 0, -20.99]} />
+                <mesh
+                  geometry={nodes["Object001_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[3.513, 0, -20.99]}
+                />
               </group>
               <group position={[-2.018, 1.366, -11.147]} scale={[1.12, 1, 1]}>
-                <mesh geometry={nodes['Object1340220_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[3.513, 0, -20.99]} />
+                <mesh
+                  geometry={nodes["Object1340220_01_-_Default_0"].geometry}
+                  material={materials["01_-_Default"]}
+                  position={[3.513, 0, -20.99]}
+                />
               </group>
-              <mesh geometry={nodes['Box867_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[11.362, -40.959, 15.368]} />
-              <mesh geometry={nodes['Sphere004_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[23.619, -31.364, -25.887]} rotation={[Math.PI / 2, 0, 0]} scale={[1.488, 1.488, 1]} />
-              <mesh geometry={nodes['Box866_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[22.699, -31.16, -26.227]} rotation={[Math.PI / 2, 0, 0]} />
-              <mesh geometry={nodes['Object1340052_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[6.269, 2.926, 19.76]} rotation={[2.881, 0, Math.PI]} />
-              <mesh geometry={nodes['Object1340050_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0.065, 2.709, 18.95]} rotation={[-0.262, 0, 0]} />
-              <mesh geometry={nodes['Box853_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[22.699, -31.16, -8.271]} rotation={[Math.PI / 2, 0, 0]} />
-              <mesh geometry={nodes['Sphere003_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[23.619, -31.364, -7.931]} rotation={[Math.PI / 2, 0, 0]} scale={[1.488, 1.488, 1]} />
-              <mesh geometry={nodes['Object006_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-1.304, 3.058, 21.078]} rotation={[-0.262, 0, 0]} />
-              <mesh geometry={nodes['Object020_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-1.304, 4.067, 21.078]} rotation={[-0.262, 0, 0]} />
-              <mesh geometry={nodes['Object1340129_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-1.304, 4.067, 21.078]} rotation={[-0.262, 0, 0]} />
-              <mesh geometry={nodes['Box856_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[20.165, -40.959, 15.368]} rotation={[Math.PI / 2, 0, 0]} />
-              <mesh geometry={nodes['Box153_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0.065, 1.366, -33.966]} />
-              <mesh geometry={nodes['Object1340095_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[32.383, 9.256, -13.854]} />
-              <mesh geometry={nodes['Object1340119_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-8.934, 34.178, -8.069]} />
-              <mesh geometry={nodes['Object1340053_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[-0.174, 3.232, 17.929]} rotation={[-0.182, 0.041, 0.007]} />
+              <mesh
+                geometry={nodes["Box867_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[11.362, -40.959, 15.368]}
+              />
+              <mesh
+                geometry={nodes["Sphere004_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[23.619, -31.364, -25.887]}
+                rotation={[Math.PI / 2, 0, 0]}
+                scale={[1.488, 1.488, 1]}
+              />
+              <mesh
+                geometry={nodes["Box866_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[22.699, -31.16, -26.227]}
+                rotation={[Math.PI / 2, 0, 0]}
+              />
+              <mesh
+                geometry={nodes["Object1340052_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[6.269, 2.926, 19.76]}
+                rotation={[2.881, 0, Math.PI]}
+              />
+              <mesh
+                geometry={nodes["Object1340050_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[0.065, 2.709, 18.95]}
+                rotation={[-0.262, 0, 0]}
+              />
+              <mesh
+                geometry={nodes["Box853_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[22.699, -31.16, -8.271]}
+                rotation={[Math.PI / 2, 0, 0]}
+              />
+              <mesh
+                geometry={nodes["Sphere003_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[23.619, -31.364, -7.931]}
+                rotation={[Math.PI / 2, 0, 0]}
+                scale={[1.488, 1.488, 1]}
+              />
+              <mesh
+                geometry={nodes["Object006_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[-1.304, 3.058, 21.078]}
+                rotation={[-0.262, 0, 0]}
+              />
+              <mesh
+                geometry={nodes["Object020_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[-1.304, 4.067, 21.078]}
+                rotation={[-0.262, 0, 0]}
+              />
+              <mesh
+                geometry={nodes["Object1340129_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[-1.304, 4.067, 21.078]}
+                rotation={[-0.262, 0, 0]}
+              />
+              <mesh
+                geometry={nodes["Box856_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[20.165, -40.959, 15.368]}
+                rotation={[Math.PI / 2, 0, 0]}
+              />
+              <mesh
+                geometry={nodes["Box153_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[0.065, 1.366, -33.966]}
+              />
+              <mesh
+                geometry={nodes["Object1340095_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[32.383, 9.256, -13.854]}
+              />
+              <mesh
+                geometry={nodes["Object1340119_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[-8.934, 34.178, -8.069]}
+              />
+              <mesh
+                geometry={nodes["Object1340053_01_-_Default_0"].geometry}
+                material={materials["01_-_Default"]}
+                position={[-0.174, 3.232, 17.929]}
+                rotation={[-0.182, 0.041, 0.007]}
+              />
             </group>
-            <mesh geometry={nodes['Box002_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0.061, 2.612, 18.534]} rotation={[-0.262, 0, 0]} />
-            <mesh geometry={nodes['Object016_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0.061, 2.612, 18.534]} rotation={[-0.262, 0, 0]} />
+            <mesh
+              geometry={nodes["Box002_01_-_Default_0"].geometry}
+              material={materials["01_-_Default"]}
+              position={[0.061, 2.612, 18.534]}
+              rotation={[-0.262, 0, 0]}
+            />
+            <mesh
+              geometry={nodes["Object016_01_-_Default_0"].geometry}
+              material={materials["01_-_Default"]}
+              position={[0.061, 2.612, 18.534]}
+              rotation={[-0.262, 0, 0]}
+            />
           </group>
-          <group position={[-9.45, 33.849, 8.084]} rotation={[-Math.PI / 2, 0, 0]}>
-            <mesh geometry={nodes['Object_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[45.956, 1.199, -8.47]} />
-            <mesh geometry={nodes['Cylinder012_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[-11, 45.695, 7.861]} rotation={[-0.021, 0, 0]} />
-            <mesh geometry={nodes['Cylinder070_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[0.549, 45.695, 7.861]} rotation={[-0.021, 0, 0]} />
-            <mesh geometry={nodes['Object100_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[11.735, 7.081, 22.003]} />
-            <mesh geometry={nodes['Object015_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[12.467, 4.155, 21.383]} />
-            <mesh geometry={nodes['Plane004_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[-107.41, 6.557, 4.943]} />
-            <mesh geometry={nodes['Object063_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[12.335, 9.427, 19.067]} />
-            <mesh geometry={nodes['Cylinder033_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[9.756, -25.146, 11.621]} />
-            <mesh geometry={nodes['Object1340338_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[21.284, -32.911, 20.42]} />
-            <mesh geometry={nodes['Object1340337_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[21.284, -32.911, 20.42]} />
-            <mesh geometry={nodes['Object1340336_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[21.284, -32.911, 20.42]} />
-            <mesh geometry={nodes['Object1340335_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[21.284, -32.911, 20.42]} />
-            <mesh geometry={nodes['Object1340334_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[21.284, -32.911, 20.42]} />
-            <mesh geometry={nodes['Object1340341_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[21.284, -32.911, 20.42]} />
-            <mesh geometry={nodes['Object1340339_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[21.284, -32.911, 20.42]} />
-            <mesh geometry={nodes['Object1340340_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[21.284, -32.911, 20.42]} />
-            <mesh geometry={nodes['Object011_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[11.642, 8.084, -12.859]} />
-            <mesh geometry={nodes['Line001_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[21.005, -24.952, -16.416]} />
-            <mesh geometry={nodes['Line002_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[18.705, -26.96, -16.416]} />
-            <mesh geometry={nodes['Box018_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[43.301, 19.846, -2.499]} />
-            <mesh geometry={nodes['Box020_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[43.301, 18.558, -2.499]} />
-            <mesh geometry={nodes['Box857_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[43.301, 21.134, -2.499]} />
-            <mesh geometry={nodes['Box013_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[42.669, 19.846, -2.499]} />
-            <mesh geometry={nodes['Cylinder001_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[10.535, -33.309, -33.849]} />
-            <mesh geometry={nodes['Cylinder006_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[-52.794, -35.93, 5.193]} />
-            <mesh geometry={nodes['Cylinder014_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[40.941, -4.684, 7.019]} />
-            <mesh geometry={nodes['Object1340170_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[21.284, -32.911, 20.42]} />
-            <mesh geometry={nodes['Line021_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[2.639, -25.696, 12.255]} />
-            <mesh geometry={nodes['Line022_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[5.786, -25.47, 12.255]} />
-            <mesh geometry={nodes['Line024_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[3.895, -25.47, 12.255]} />
-            <mesh geometry={nodes['Line018_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[2.852, -25.47, 12.255]} />
-            <mesh geometry={nodes['Line025_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[-0.836, -25.47, 12.255]} />
-            <mesh geometry={nodes['Line009_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[3.67, -25.47, 12.255]} />
-            <mesh geometry={nodes['Line016_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[3.67, -25.47, 24.353]} />
-            <mesh geometry={nodes['Line017_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[1.02, -25.47, 24.353]} />
-            <mesh geometry={nodes['Object1340192_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[10.758, -25.909, 15.046]} />
-            <mesh geometry={nodes['Cylinder040_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[10.163, -25.235, 21.902]} />
-            <mesh geometry={nodes['Line020_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[2.297, -25.47, 12.255]} />
-            <mesh geometry={nodes['Line019_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[2.571, -25.47, 12.255]} />
-            <mesh geometry={nodes['Object038_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[9.45, 8.084, -33.849]} />
-            <mesh geometry={nodes['Object039_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[21.284, -34.027, 20.42]} />
-            <mesh geometry={nodes['Object1340172_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[28.785, -34.678, 21.442]} />
-            <mesh geometry={nodes['Line003_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[28.95, -34.678, 21.442]} />
-            <mesh geometry={nodes['Object1340171_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[28.95, -34.519, 21.442]} />
-            <mesh geometry={nodes['Object061_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[-24.261, -15.417, 18.406]} />
-            <mesh geometry={nodes['Box017_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[45.537, 2.665, -14.192]} />
-            <mesh geometry={nodes['Object1340032_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[7.54, 9.427, 21.195]} />
-            <mesh geometry={nodes['Line006_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[48.499, 2.069, -16.378]} />
-            <mesh geometry={nodes['Object1340139_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[45.106, 2.037, -11.112]} />
-            <mesh geometry={nodes['Object1340150_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[44.453, 2.546, 2.352]} />
-            <mesh geometry={nodes['Object1340143_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[46.392, 2.037, -11.112]} />
-            <mesh geometry={nodes['Object1340142_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[46.392, 2.037, -11.112]} />
-            <mesh geometry={nodes['Object008_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[9.45, 8.084, -33.849]} />
-            <mesh geometry={nodes['Line008_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[45.759, 2.087, -5.868]} />
-            <mesh geometry={nodes['Object1340148_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[44.453, -2.438, 2.352]} />
-            <mesh geometry={nodes['Object010_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[48.426, 4.787, -11.112]} />
-            <mesh geometry={nodes['Box008_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[45.106, 2.037, -11.112]} />
-            <mesh geometry={nodes['Object1340141_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[46.189, 1.199, -8.47]} />
-            <mesh geometry={nodes['Object022_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[13.032, 4.208, 22.507]} />
-            <mesh geometry={nodes['Object1340039_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[12.335, 9.427, 19.067]} />
-            <mesh geometry={nodes['Object1340184_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[10.909, -25.47, 15.046]} />
-            <mesh geometry={nodes['Cylinder039_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[1.459, -25.435, 13.27]} />
-            <mesh geometry={nodes['Cylinder076_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[1.632, -25.417, 11.879]} />
-            <mesh geometry={nodes['Sphere002_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[9.45, 8.084, -33.849]} />
-            <mesh geometry={nodes['Object1340217_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[9.45, 8.084, -33.849]} />
-            <mesh geometry={nodes['Object1340215_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[9.45, 8.084, -33.849]} />
-            <mesh geometry={nodes['Cylinder068_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[45.64, 2.128, 5.451]} />
-            <mesh geometry={nodes['Cylinder075_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[2.265, -25.4, 9.82]} />
-            <mesh geometry={nodes['Object1340333_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[13.343, -26.136, 21.311]} />
-            <mesh geometry={nodes['Cylinder071_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[13.343, -25.52, 18.545]} />
-            <mesh geometry={nodes['Object036_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[3.255, -26.301, 18.451]} />
-            <mesh geometry={nodes['Line007_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[44.836, -15.02, 2.352]} />
-            <mesh geometry={nodes['Cylinder004_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[-54.266, -34.975, 3.786]} />
-            <mesh geometry={nodes['Cylinder002_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[-46.658, -28.101, -33.849]} />
-            <mesh geometry={nodes['Cylinder072_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[-46.658, 40.729, -33.849]} />
-            <mesh geometry={nodes['Cylinder073_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[-54.266, 48.862, 4.081]} />
-            <mesh geometry={nodes['Line010_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[13.922, -25.47, 12.255]} />
-            <mesh geometry={nodes['Box864_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[27.702, 79.629, -33.849]} />
-            <mesh geometry={nodes['Plane003_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[3.074, 109.75, 0.988]} />
-            <mesh geometry={nodes['Cylinder035_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[0.657, -25.127, 22.411]} />
-            <mesh geometry={nodes['Cylinder074_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[7.581, -25.21, 22.22]} />
-            <mesh geometry={nodes['Cylinder015_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[3.255, -25.479, 14.762]} />
-            <mesh geometry={nodes['Object1340193_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[10.758, -25.909, 15.046]} />
-            <mesh geometry={nodes['Line014_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[10.758, -25.909, 15.046]} />
-            <mesh geometry={nodes['Cylinder077_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[9.726, -26.924, 6.927]} />
-            <mesh geometry={nodes['Rectangle049_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[21.358, -24.851, -19.442]} />
-            <mesh geometry={nodes['Rectangle051_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[21.446, -24.851, -18.799]} />
-            <mesh geometry={nodes['Rectangle052_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[21.326, -24.923, -18.178]} />
-            <mesh geometry={nodes['Rectangle054_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[20.918, -25.213, -17.792]} />
-            <mesh geometry={nodes['Rectangle053_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[20.572, -25.625, -17.506]} />
-            <mesh geometry={nodes['Rectangle055_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[20.223, -26.074, -17.187]} />
-            <mesh geometry={nodes['Rectangle056_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[19.773, -26.452, -16.906]} />
-            <mesh geometry={nodes['Rectangle058_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[19.29, -26.76, -16.649]} />
-            <mesh geometry={nodes['Rectangle057_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[18.75, -26.967, -16.389]} />
-            <mesh geometry={nodes['Rectangle065_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[18.293, -27.156, -16.675]} />
-            <mesh geometry={nodes['Rectangle066_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[18.248, -27.185, -17.278]} />
-            <mesh geometry={nodes['Rectangle064_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[18.622, -27.218, -17.805]} />
-            <mesh geometry={nodes['Rectangle063_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[18.968, -27.092, -18.331]} />
-            <mesh geometry={nodes['Rectangle068_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[19.274, -26.852, -18.837]} />
-            <mesh geometry={nodes['Rectangle069_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[19.637, -26.466, -19.206]} />
-            <mesh geometry={nodes['Rectangle067_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[19.981, -26.131, -19.622]} />
-            <mesh geometry={nodes['Rectangle022_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[20.3, -25.646, -19.922]} />
-            <mesh geometry={nodes['Rectangle050_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[20.928, -25.065, -19.869]} />
-            <mesh geometry={nodes['Line030_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[20.623, -25.307, -20.242]} />
-            <mesh geometry={nodes['Box852_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[20.533, -25.209, -20.974]} />
-            <mesh geometry={nodes['Plane005_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[11.876, -26.805, -10.403]} />
-            <mesh geometry={nodes['Object1340211_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[11.876, -26.828, -10.403]} />
-            <mesh geometry={nodes['Cylinder059_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[-4.94, -39.836, 20.781]} />
-            <mesh geometry={nodes['Box868_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[13.343, -26.136, 21.311]} />
-            <mesh geometry={nodes['Box015_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[3.255, -26.301, 18.451]} />
-            <mesh geometry={nodes['Object1340033_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[7.54, 9.427, 21.195]} />
-            <mesh geometry={nodes['Object017_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[9.45, 9.965, 20.255]} rotation={[0.093, 0, 0]} />
-            <mesh geometry={nodes['Object025_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[43.688, 12.372, 13.253]} />
-            <mesh geometry={nodes['Object099_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[10.501, 30.991, 14.876]} rotation={[0, -0.012, 0]} />
-            <mesh geometry={nodes['Box007_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[9.45, 8.084, -33.849]} />
-            <mesh geometry={nodes['Object044_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[31.345, 40.526, 11.862]} rotation={[0.014, 0.009, -0.028]} />
-            <mesh geometry={nodes['Object021_02_-_Default_0'].geometry} material={materials['02_-_Default']} position={[32.544, 4.208, 22.121]} rotation={[0.008, 0, 0]} />
+          <group
+            position={[-9.45, 33.849, 8.084]}
+            rotation={[-Math.PI / 2, 0, 0]}
+          >
+            <mesh
+              geometry={nodes["Object_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[45.956, 1.199, -8.47]}
+            />
+            <mesh
+              geometry={nodes["Cylinder012_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[-11, 45.695, 7.861]}
+              rotation={[-0.021, 0, 0]}
+            />
+            <mesh
+              geometry={nodes["Cylinder070_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[0.549, 45.695, 7.861]}
+              rotation={[-0.021, 0, 0]}
+            />
+            <mesh
+              geometry={nodes["Object100_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[11.735, 7.081, 22.003]}
+            />
+            <mesh
+              geometry={nodes["Object015_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[12.467, 4.155, 21.383]}
+            />
+            <mesh
+              geometry={nodes["Plane004_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[-107.41, 6.557, 4.943]}
+            />
+            <mesh
+              geometry={nodes["Object063_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[12.335, 9.427, 19.067]}
+            />
+            <mesh
+              geometry={nodes["Cylinder033_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[9.756, -25.146, 11.621]}
+            />
+            <mesh
+              geometry={nodes["Object1340338_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[21.284, -32.911, 20.42]}
+            />
+            <mesh
+              geometry={nodes["Object1340337_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[21.284, -32.911, 20.42]}
+            />
+            <mesh
+              geometry={nodes["Object1340336_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[21.284, -32.911, 20.42]}
+            />
+            <mesh
+              geometry={nodes["Object1340335_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[21.284, -32.911, 20.42]}
+            />
+            <mesh
+              geometry={nodes["Object1340334_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[21.284, -32.911, 20.42]}
+            />
+            <mesh
+              geometry={nodes["Object1340341_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[21.284, -32.911, 20.42]}
+            />
+            <mesh
+              geometry={nodes["Object1340339_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[21.284, -32.911, 20.42]}
+            />
+            <mesh
+              geometry={nodes["Object1340340_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[21.284, -32.911, 20.42]}
+            />
+            <mesh
+              geometry={nodes["Object011_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[11.642, 8.084, -12.859]}
+            />
+            <mesh
+              geometry={nodes["Line001_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[21.005, -24.952, -16.416]}
+            />
+            <mesh
+              geometry={nodes["Line002_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[18.705, -26.96, -16.416]}
+            />
+            <mesh
+              geometry={nodes["Box018_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[43.301, 19.846, -2.499]}
+            />
+            <mesh
+              geometry={nodes["Box020_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[43.301, 18.558, -2.499]}
+            />
+            <mesh
+              geometry={nodes["Box857_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[43.301, 21.134, -2.499]}
+            />
+            <mesh
+              geometry={nodes["Box013_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[42.669, 19.846, -2.499]}
+            />
+            <mesh
+              geometry={nodes["Cylinder001_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[10.535, -33.309, -33.849]}
+            />
+            <mesh
+              geometry={nodes["Cylinder006_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[-52.794, -35.93, 5.193]}
+            />
+            <mesh
+              geometry={nodes["Cylinder014_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[40.941, -4.684, 7.019]}
+            />
+            <mesh
+              geometry={nodes["Object1340170_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[21.284, -32.911, 20.42]}
+            />
+            <mesh
+              geometry={nodes["Line021_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[2.639, -25.696, 12.255]}
+            />
+            <mesh
+              geometry={nodes["Line022_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[5.786, -25.47, 12.255]}
+            />
+            <mesh
+              geometry={nodes["Line024_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[3.895, -25.47, 12.255]}
+            />
+            <mesh
+              geometry={nodes["Line018_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[2.852, -25.47, 12.255]}
+            />
+            <mesh
+              geometry={nodes["Line025_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[-0.836, -25.47, 12.255]}
+            />
+            <mesh
+              geometry={nodes["Line009_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[3.67, -25.47, 12.255]}
+            />
+            <mesh
+              geometry={nodes["Line016_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[3.67, -25.47, 24.353]}
+            />
+            <mesh
+              geometry={nodes["Line017_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[1.02, -25.47, 24.353]}
+            />
+            <mesh
+              geometry={nodes["Object1340192_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[10.758, -25.909, 15.046]}
+            />
+            <mesh
+              geometry={nodes["Cylinder040_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[10.163, -25.235, 21.902]}
+            />
+            <mesh
+              geometry={nodes["Line020_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[2.297, -25.47, 12.255]}
+            />
+            <mesh
+              geometry={nodes["Line019_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[2.571, -25.47, 12.255]}
+            />
+            <mesh
+              geometry={nodes["Object038_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[9.45, 8.084, -33.849]}
+            />
+            <mesh
+              geometry={nodes["Object039_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[21.284, -34.027, 20.42]}
+            />
+            <mesh
+              geometry={nodes["Object1340172_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[28.785, -34.678, 21.442]}
+            />
+            <mesh
+              geometry={nodes["Line003_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[28.95, -34.678, 21.442]}
+            />
+            <mesh
+              geometry={nodes["Object1340171_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[28.95, -34.519, 21.442]}
+            />
+            <mesh
+              geometry={nodes["Object061_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[-24.261, -15.417, 18.406]}
+            />
+            <mesh
+              geometry={nodes["Box017_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[45.537, 2.665, -14.192]}
+            />
+            <mesh
+              geometry={nodes["Object1340032_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[7.54, 9.427, 21.195]}
+            />
+            <mesh
+              geometry={nodes["Line006_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[48.499, 2.069, -16.378]}
+            />
+            <mesh
+              geometry={nodes["Object1340139_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[45.106, 2.037, -11.112]}
+            />
+            <mesh
+              geometry={nodes["Object1340150_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[44.453, 2.546, 2.352]}
+            />
+            <mesh
+              geometry={nodes["Object1340143_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[46.392, 2.037, -11.112]}
+            />
+            <mesh
+              geometry={nodes["Object1340142_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[46.392, 2.037, -11.112]}
+            />
+            <mesh
+              geometry={nodes["Object008_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[9.45, 8.084, -33.849]}
+            />
+            <mesh
+              geometry={nodes["Line008_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[45.759, 2.087, -5.868]}
+            />
+            <mesh
+              geometry={nodes["Object1340148_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[44.453, -2.438, 2.352]}
+            />
+            <mesh
+              geometry={nodes["Object010_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[48.426, 4.787, -11.112]}
+            />
+            <mesh
+              geometry={nodes["Box008_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[45.106, 2.037, -11.112]}
+            />
+            <mesh
+              geometry={nodes["Object1340141_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[46.189, 1.199, -8.47]}
+            />
+            <mesh
+              geometry={nodes["Object022_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[13.032, 4.208, 22.507]}
+            />
+            <mesh
+              geometry={nodes["Object1340039_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[12.335, 9.427, 19.067]}
+            />
+            <mesh
+              geometry={nodes["Object1340184_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[10.909, -25.47, 15.046]}
+            />
+            <mesh
+              geometry={nodes["Cylinder039_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[1.459, -25.435, 13.27]}
+            />
+            <mesh
+              geometry={nodes["Cylinder076_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[1.632, -25.417, 11.879]}
+            />
+            <mesh
+              geometry={nodes["Sphere002_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[9.45, 8.084, -33.849]}
+            />
+            <mesh
+              geometry={nodes["Object1340217_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[9.45, 8.084, -33.849]}
+            />
+            <mesh
+              geometry={nodes["Object1340215_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[9.45, 8.084, -33.849]}
+            />
+            <mesh
+              geometry={nodes["Cylinder068_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[45.64, 2.128, 5.451]}
+            />
+            <mesh
+              geometry={nodes["Cylinder075_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[2.265, -25.4, 9.82]}
+            />
+            <mesh
+              geometry={nodes["Object1340333_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[13.343, -26.136, 21.311]}
+            />
+            <mesh
+              geometry={nodes["Cylinder071_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[13.343, -25.52, 18.545]}
+            />
+            <mesh
+              geometry={nodes["Object036_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[3.255, -26.301, 18.451]}
+            />
+            <mesh
+              geometry={nodes["Line007_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[44.836, -15.02, 2.352]}
+            />
+            <mesh
+              geometry={nodes["Cylinder004_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[-54.266, -34.975, 3.786]}
+            />
+            <mesh
+              geometry={nodes["Cylinder002_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[-46.658, -28.101, -33.849]}
+            />
+            <mesh
+              geometry={nodes["Cylinder072_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[-46.658, 40.729, -33.849]}
+            />
+            <mesh
+              geometry={nodes["Cylinder073_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[-54.266, 48.862, 4.081]}
+            />
+            <mesh
+              geometry={nodes["Line010_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[13.922, -25.47, 12.255]}
+            />
+            <mesh
+              geometry={nodes["Box864_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[27.702, 79.629, -33.849]}
+            />
+            <mesh
+              geometry={nodes["Plane003_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[3.074, 109.75, 0.988]}
+            />
+            <mesh
+              geometry={nodes["Cylinder035_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[0.657, -25.127, 22.411]}
+            />
+            <mesh
+              geometry={nodes["Cylinder074_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[7.581, -25.21, 22.22]}
+            />
+            <mesh
+              geometry={nodes["Cylinder015_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[3.255, -25.479, 14.762]}
+            />
+            <mesh
+              geometry={nodes["Object1340193_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[10.758, -25.909, 15.046]}
+            />
+            <mesh
+              geometry={nodes["Line014_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[10.758, -25.909, 15.046]}
+            />
+            <mesh
+              geometry={nodes["Cylinder077_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[9.726, -26.924, 6.927]}
+            />
+            <mesh
+              geometry={nodes["Rectangle049_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[21.358, -24.851, -19.442]}
+            />
+            <mesh
+              geometry={nodes["Rectangle051_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[21.446, -24.851, -18.799]}
+            />
+            <mesh
+              geometry={nodes["Rectangle052_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[21.326, -24.923, -18.178]}
+            />
+            <mesh
+              geometry={nodes["Rectangle054_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[20.918, -25.213, -17.792]}
+            />
+            <mesh
+              geometry={nodes["Rectangle053_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[20.572, -25.625, -17.506]}
+            />
+            <mesh
+              geometry={nodes["Rectangle055_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[20.223, -26.074, -17.187]}
+            />
+            <mesh
+              geometry={nodes["Rectangle056_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[19.773, -26.452, -16.906]}
+            />
+            <mesh
+              geometry={nodes["Rectangle058_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[19.29, -26.76, -16.649]}
+            />
+            <mesh
+              geometry={nodes["Rectangle057_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[18.75, -26.967, -16.389]}
+            />
+            <mesh
+              geometry={nodes["Rectangle065_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[18.293, -27.156, -16.675]}
+            />
+            <mesh
+              geometry={nodes["Rectangle066_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[18.248, -27.185, -17.278]}
+            />
+            <mesh
+              geometry={nodes["Rectangle064_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[18.622, -27.218, -17.805]}
+            />
+            <mesh
+              geometry={nodes["Rectangle063_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[18.968, -27.092, -18.331]}
+            />
+            <mesh
+              geometry={nodes["Rectangle068_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[19.274, -26.852, -18.837]}
+            />
+            <mesh
+              geometry={nodes["Rectangle069_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[19.637, -26.466, -19.206]}
+            />
+            <mesh
+              geometry={nodes["Rectangle067_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[19.981, -26.131, -19.622]}
+            />
+            <mesh
+              geometry={nodes["Rectangle022_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[20.3, -25.646, -19.922]}
+            />
+            <mesh
+              geometry={nodes["Rectangle050_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[20.928, -25.065, -19.869]}
+            />
+            <mesh
+              geometry={nodes["Line030_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[20.623, -25.307, -20.242]}
+            />
+            <mesh
+              geometry={nodes["Box852_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[20.533, -25.209, -20.974]}
+            />
+            <mesh
+              geometry={nodes["Plane005_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[11.876, -26.805, -10.403]}
+            />
+            <mesh
+              geometry={nodes["Object1340211_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[11.876, -26.828, -10.403]}
+            />
+            <mesh
+              geometry={nodes["Cylinder059_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[-4.94, -39.836, 20.781]}
+            />
+            <mesh
+              geometry={nodes["Box868_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[13.343, -26.136, 21.311]}
+            />
+            <mesh
+              geometry={nodes["Box015_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[3.255, -26.301, 18.451]}
+            />
+            <mesh
+              geometry={nodes["Object1340033_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[7.54, 9.427, 21.195]}
+            />
+            <mesh
+              geometry={nodes["Object017_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[9.45, 9.965, 20.255]}
+              rotation={[0.093, 0, 0]}
+            />
+            <mesh
+              geometry={nodes["Object025_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[43.688, 12.372, 13.253]}
+            />
+            <mesh
+              geometry={nodes["Object099_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[10.501, 30.991, 14.876]}
+              rotation={[0, -0.012, 0]}
+            />
+            <mesh
+              geometry={nodes["Box007_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[9.45, 8.084, -33.849]}
+            />
+            <mesh
+              geometry={nodes["Object044_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[31.345, 40.526, 11.862]}
+              rotation={[0.014, 0.009, -0.028]}
+            />
+            <mesh
+              geometry={nodes["Object021_02_-_Default_0"].geometry}
+              material={materials["02_-_Default"]}
+              position={[32.544, 4.208, 22.121]}
+              rotation={[0.008, 0, 0]}
+            />
           </group>
         </group>
       </group>
     </group>
-  )
-}
+  );
+});
 
-useGLTF.preload('./models/slum_house.glb')
+useGLTF.preload("./models/slum_house.glb");
